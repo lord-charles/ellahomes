@@ -52,7 +52,7 @@ const Banner = () => {
               className="rounded-md"
             >
               <h1 className=" lg:text-[40px] xxxs:text-[20px]  font-semibold text-center text-black  px-2 rounded-md custom-font-p">
-                EllaHOMES & PROPERTY REALTORS <br />
+                ELLAHOMES & PROPERTY REALTORS <br />
               </h1>
             </div>
 
