@@ -51,7 +51,7 @@ const Data = () => {
           </div>
         </div>
       </div>
-      <p className="text-[14px] relative top-[13vh] text-base text-gray-400 md:mt-0 md:order-1 xxxs:text-center">
+      <p className="text-[14px] relative top-[15vh] text-base text-gray-400 md:mt-0 md:order-1 xxxs:text-center">
         Ellahomes © 2023 All Rights Reserved.{" "}
         <a href="https://Ellahomeske.com/" target="_blank" rel="noopener"></a>
       </p>
