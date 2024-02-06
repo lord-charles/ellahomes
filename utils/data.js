@@ -168,7 +168,7 @@ export const ForRent = [
   {
     id: 100,
     heading1: "2 bedroom apartment ",
-    heading2: "Kiamunyi, Nakuru.",
+    heading2: "Nyali, Mombasa.",
     beds: 2,
     sf: 1916,
     // bath: 2.5,
@@ -186,13 +186,13 @@ export const ForRent = [
       "Two spacious bedrooms with ample storage",
       "Affordable monthly rent of 24,000 Ksh",
       "Tranquil balcony offering scenic views",
-      "Convenient location in Kiamunyi, Nakuru",
+      "Convenient location in Nyali, Mombasa",
     ],
     time: Date.now() - 86400000, // Current timestamp
     description:
-      "Kiamunyi, Nakuru: Experience the epitome of modern living in this impeccably designed 2-bedroom apartment situated in the serene neighborhood of Kiamunyi, Nakuru. This captivating dwelling boasts a spacious layout, awash with natural light, and tastefully appointed with modern furnishings, creating an ambiance of comfort and sophistication.",
+      "Nyali, Mombasa: Experience the epitome of modern living in this impeccably designed 2-bedroom apartment situated in the serene neighborhood of Nyali, Mombasa. This captivating dwelling boasts a spacious layout, awash with natural light, and tastefully appointed with modern furnishings, creating an ambiance of comfort and sophistication.",
     richDescription:
-      "Step into a haven of tranquility and modern elegance with this exquisite 2-bedroom apartment in Kiamunyi, Nakuru. This captivating abode seamlessly blends comfort and style, offering a sanctuary for those seeking a refined living experience. The apartment's spacious layout, adorned with ample natural light, creates an airy and inviting atmosphere.The two bedrooms provide ample space for relaxation, each adorned with tasteful furnishings and ample storage. The master bedroom features an en suite bathroom, ensuring a luxurious and private retreat. The living room exudes warmth and sophistication, featuring plush seating arrangements and a captivating flat-screen TV, creating the perfect setting for entertaining guests or enjoying moments of relaxation. The well-equipped kitchen, adorned with modern appliances, seamlessly blends functionality and style, making meal preparation a culinary delight. Step out onto the tranquil balcony and immerse yourself in the scenic views, offering a tranquil escape from the bustling city life. Situated in the serene neighborhood of Kiamunyi, Nakuru, this apartment provides a tranquil retreat while still offering convenient access to essential amenities and the vibrant city center. Embrace a lifestyle of comfort and refinement in this impeccably designed 2-bedroom apartment. With an affordable monthly rent of 24,000 Ksh, this apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of modern living.",
+      "Step into a haven of tranquility and modern elegance with this exquisite 2-bedroom apartment in Nyali, Mombasa. This captivating abode seamlessly blends comfort and style, offering a sanctuary for those seeking a refined living experience. The apartment's spacious layout, adorned with ample natural light, creates an airy and inviting atmosphere.The two bedrooms provide ample space for relaxation, each adorned with tasteful furnishings and ample storage. The master bedroom features an en suite bathroom, ensuring a luxurious and private retreat. The living room exudes warmth and sophistication, featuring plush seating arrangements and a captivating flat-screen TV, creating the perfect setting for entertaining guests or enjoying moments of relaxation. The well-equipped kitchen, adorned with modern appliances, seamlessly blends functionality and style, making meal preparation a culinary delight. Step out onto the tranquil balcony and immerse yourself in the scenic views, offering a tranquil escape from the bustling city life. Situated in the serene neighborhood of Nyali, Mombasa, this apartment provides a tranquil retreat while still offering convenient access to essential amenities and the vibrant city center. Embrace a lifestyle of comfort and refinement in this impeccably designed 2-bedroom apartment. With an affordable monthly rent of 24,000 Ksh, this apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of modern living.",
     amenities: [
       {
         icon: "/icons/parking-icon.png",
@@ -298,7 +298,7 @@ export const ForRent = [
   {
     id: 103,
     heading1: "Spacious 1 & 2-Bedroom Apartment",
-    heading2: "Kiamunyi, Nakuru",
+    heading2: "Nyali, Mombasa",
     beds: 2,
     sf: 1916,
     // bath: 2.5,
@@ -320,14 +320,14 @@ export const ForRent = [
       "Extraordinarily spacious rooms for ultimate comfort and relaxation",
       "Front and rear balconies offering scenic views and fresh air",
       "Affordable monthly rent of 20,000 Ksh",
-      "Convenient location in Kiamunyi, Nakuru",
+      "Convenient location in Nyali, Mombasa",
       "Secure parking for peace of mind",
     ],
     time: Date.now() - 259200000, // Three days (in milliseconds) before the current timestamp
     description:
-      "Elevate your living experience with this spacious 1 & 2-bedroom apartment nestled in the serene neighborhood of Kiamunyi, Nakuru. This impeccably designed abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for individuals, couples, and small families seeking a comfortable and well-appointed living space.",
+      "Elevate your living experience with this spacious 1 & 2-bedroom apartment nestled in the serene neighborhood of Nyali, Mombasa. This impeccably designed abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for individuals, couples, and small families seeking a comfortable and well-appointed living space.",
     richDescription:
-      "Discover a haven of comfort and convenience in this spacious 1 & 2-bedroom apartment in Kiamunyi, Nakuru.This impeccably designed apartment exudes an air of sophistication and warmth, providing a sanctuary for those seeking a refined living experience. Choose from spacious 1 or 2-bedroom configurations to suit your needs, each offering ample living space and a master ensuite for a luxurious and private retreat.The extraordinarily spacious rooms provide ample space for relaxation and personal expression. The apartment's layout is designed for effortless living, with ample storage and natural light creating an airy and inviting atmosphere. Step out onto the front and rear balconies and immerse yourself in the scenic views, offering a tranquil escape from the bustling city life. Enjoy a cup of coffee while soaking in the surrounding vistas or host memorable gatherings under the open sky. Secure parking on the premises ensures peace of mind, while internet ready for seamless connectivity keeps you connected to the world around you. Situated in the serene neighborhood of Kiamunyi, Nakuru, this apartment places you within close proximity to an array of amenities, including shopping centers, restaurants, and recreational facilities. Explore the city's vibrant attractions and easily return to your cozy haven at the end of the day. At an affordable monthly rent of 20,000 Ksh, this spacious 1 & 2-bedroom apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and convenience.",
+      "Discover a haven of comfort and convenience in this spacious 1 & 2-bedroom apartment in Nyali, Mombasa.This impeccably designed apartment exudes an air of sophistication and warmth, providing a sanctuary for those seeking a refined living experience. Choose from spacious 1 or 2-bedroom configurations to suit your needs, each offering ample living space and a master ensuite for a luxurious and private retreat.The extraordinarily spacious rooms provide ample space for relaxation and personal expression. The apartment's layout is designed for effortless living, with ample storage and natural light creating an airy and inviting atmosphere. Step out onto the front and rear balconies and immerse yourself in the scenic views, offering a tranquil escape from the bustling city life. Enjoy a cup of coffee while soaking in the surrounding vistas or host memorable gatherings under the open sky. Secure parking on the premises ensures peace of mind, while internet ready for seamless connectivity keeps you connected to the world around you. Situated in the serene neighborhood of Nyali, Mombasa, this apartment places you within close proximity to an array of amenities, including shopping centers, restaurants, and recreational facilities. Explore the city's vibrant attractions and easily return to your cozy haven at the end of the day. At an affordable monthly rent of 20,000 Ksh, this spacious 1 & 2-bedroom apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and convenience.",
     amenities: [
       {
         icon: "/icons/parking-icon.png",
@@ -385,7 +385,7 @@ export const ForRent = [
   {
     id: 105,
     heading1: "Spacious bedsitters",
-    heading2: "Kiamunyi, Nakuru.",
+    heading2: "Nyali, Mombasa.",
     beds: 1,
     sf: 1916,
     // bath: 2.5,
@@ -427,7 +427,7 @@ export const ForRent = [
   {
     id: 106,
     heading1: "4-Bedroom Home",
-    heading2: "Kiamunyi, Nakuru.",
+    heading2: "Nyali, Mombasa.",
     beds: 4,
     sf: 1916,
     // bath: 2.5,
@@ -444,13 +444,13 @@ export const ForRent = [
       "IExpansive garden on the front yard for outdoor relaxation and recreation",
       "Huge parking space for multiple vehicles",
       "Affordable monthly rent of 50,000 Ksh",
-      "Serene and secure neighborhood in Kiamunyi, Nakuru",
+      "Serene and secure neighborhood in Nyali, Mombasa",
     ],
     time: Date.now() - 259200000,
     description:
-      "Unveil a tranquil retreat amidst nature with this spacious 4-bedroom home nestled on a ¼ acre parcel in the serene neighborhood of Kiamunyi, Nakuru. This impeccably designed residence offers a blend of modern amenities, ample living space, and a serene environment, providing an ideal haven for families seeking a comfortable and luxurious living experience.",
+      "Unveil a tranquil retreat amidst nature with this spacious 4-bedroom home nestled on a ¼ acre parcel in the serene neighborhood of Nyali, Mombasa. This impeccably designed residence offers a blend of modern amenities, ample living space, and a serene environment, providing an ideal haven for families seeking a comfortable and luxurious living experience.",
     richDescription:
-      "Discover a sanctuary of comfort and tranquility in this spacious 4-bedroom home in Kiamunyi, Nakuru.This impeccably designed residence exudes an air of warmth and sophistication, offering a haven for families seeking a spacious and luxurious living experience. The home's expansive layout provides ample living space, with four well-appointed bedrooms, including two ensuites for added privacy and convenience. The expansive garden on the front yard creates an oasis of tranquility, offering ample space for outdoor relaxation, family gatherings, or indulging in your green thumb. Imagine enjoying a leisurely afternoon picnic or hosting memorable barbecues under the open sky. The huge parking space ensures ample room for multiple vehicles, providing peace of mind and convenience for you and your guests. Situated in the serene neighborhood of Kiamunyi, Nakuru, this home offers a tranquil escape from the bustling city life while still providing convenient access to essential amenities and the vibrant city center.At an affordable monthly rent of 50,000 Ksh, this spacious 4-bedroom home with its expansive garden and modern conveniences offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and tranquility.",
+      "Discover a sanctuary of comfort and tranquility in this spacious 4-bedroom home in Nyali, Mombasa.This impeccably designed residence exudes an air of warmth and sophistication, offering a haven for families seeking a spacious and luxurious living experience. The home's expansive layout provides ample living space, with four well-appointed bedrooms, including two ensuites for added privacy and convenience. The expansive garden on the front yard creates an oasis of tranquility, offering ample space for outdoor relaxation, family gatherings, or indulging in your green thumb. Imagine enjoying a leisurely afternoon picnic or hosting memorable barbecues under the open sky. The huge parking space ensures ample room for multiple vehicles, providing peace of mind and convenience for you and your guests. Situated in the serene neighborhood of Nyali, Mombasa, this home offers a tranquil escape from the bustling city life while still providing convenient access to essential amenities and the vibrant city center.At an affordable monthly rent of 50,000 Ksh, this spacious 4-bedroom home with its expansive garden and modern conveniences offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and tranquility.",
     amenities: [
       {
         icon: "/icons/parking-icon.png",
@@ -461,7 +461,7 @@ export const ForRent = [
   {
     id: 107,
     heading1: "Affordable 2 Bedroom",
-    heading2: "Kiamunyi, Nakuru.",
+    heading2: "Nyali, Mombasa.",
     beds: 2,
     sf: 1916,
     // bath: 2.5,
@@ -483,14 +483,14 @@ export const ForRent = [
       "Secure parking on the premises for peace of mind",
       "Affordable monthly rent of 50,000 Ksh",
       "Reliable 24/7 water supply for uninterrupted convenience",
-      "Convenient location in Kiamunyi, Nakuru",
+      "Convenient location in Nyali, Mombasa",
       "Affordable monthly rent of 18,000 Ksh",
     ],
     time: Date.now() - 259200000,
     description:
-      "Elevate your living experience with this impeccably designed 2-bedroom master ensuite apartment nestled in the serene neighborhood of Kiamunyi, Nakuru. This well-appointed abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for individuals and couples seeking a comfortable and affordable living space.",
+      "Elevate your living experience with this impeccably designed 2-bedroom master ensuite apartment nestled in the serene neighborhood of Nyali, Mombasa. This well-appointed abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for individuals and couples seeking a comfortable and affordable living space.",
     richDescription:
-      "Discover a haven of comfort and convenience in this impeccably designed 2-bedroom master ensuite apartment in Kiamunyi, Nakuru. This well-appointed apartment exudes an air of warmth and sophistication, providing a sanctuary for those seeking a refined living experience. The apartment's layout is designed for effortless living, with two well-appointed bedrooms, including a master ensuite that offers a luxurious and private retreat. The well-equipped kitchen boasts modern appliances and ample counter space, making meal preparation a breeze. Whether you're whipping up a quick breakfast or preparing a gourmet dinner, this kitchen caters to all your culinary needs. Step out onto the serene balcony and embrace the fresh air, offering a tranquil escape from the bustling city life. Enjoy a cup of coffee while soaking in the surrounding views, or simply unwind and let your thoughts wander. Secure parking on the premises ensures peace of mind, while the reliable 24/7 water supply guarantees uninterrupted access to this essential amenity. Situated in the serene neighborhood of Kiamunyi, Nakuru, this apartment places you within close proximity to an array of amenities, including shopping centers, restaurants, and recreational facilities. Explore the city's vibrant attractions and easily return to your cozy haven at the end of the day. At an affordable monthly rent of 18,000 Ksh, this 2-bedroom master ensuite apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and convenience.",
+      "Discover a haven of comfort and convenience in this impeccably designed 2-bedroom master ensuite apartment in Nyali, Mombasa. This well-appointed apartment exudes an air of warmth and sophistication, providing a sanctuary for those seeking a refined living experience. The apartment's layout is designed for effortless living, with two well-appointed bedrooms, including a master ensuite that offers a luxurious and private retreat. The well-equipped kitchen boasts modern appliances and ample counter space, making meal preparation a breeze. Whether you're whipping up a quick breakfast or preparing a gourmet dinner, this kitchen caters to all your culinary needs. Step out onto the serene balcony and embrace the fresh air, offering a tranquil escape from the bustling city life. Enjoy a cup of coffee while soaking in the surrounding views, or simply unwind and let your thoughts wander. Secure parking on the premises ensures peace of mind, while the reliable 24/7 water supply guarantees uninterrupted access to this essential amenity. Situated in the serene neighborhood of Nyali, Mombasa, this apartment places you within close proximity to an array of amenities, including shopping centers, restaurants, and recreational facilities. Explore the city's vibrant attractions and easily return to your cozy haven at the end of the day. At an affordable monthly rent of 18,000 Ksh, this 2-bedroom master ensuite apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and convenience.",
     amenities: [
       {
         icon: "/icons/parking-icon.png",
@@ -501,7 +501,7 @@ export const ForRent = [
   {
     id: 108,
     heading1: "Strategically Located Shops for Rent",
-    heading2: "Kiamunyi, Nakuru.",
+    heading2: "Nyali, Mombasa.",
     beds: 0,
     sf: 1916,
     // bath: 2.5,
@@ -516,14 +516,14 @@ export const ForRent = [
     points: [
       "Spacious and well-maintained shops",
       "Ideal for a variety of business ventures",
-      "Strategic location in Kiamunyi, Nakuru",
+      "Strategic location in Nyali, Mombasa",
       "Affordable monthly rent of 7,000 Ksh",
     ],
     time: Date.now() - 259200000,
     description:
-      "Establish your business in a thriving commercial hub with these strategically located shops in Kiamunyi, Nakuru. Offering a blend of affordability and accessibility, these shops provide an ideal base for entrepreneurs seeking to tap into a bustling market.",
+      "Establish your business in a thriving commercial hub with these strategically located shops in Nyali, Mombasa. Offering a blend of affordability and accessibility, these shops provide an ideal base for entrepreneurs seeking to tap into a bustling market.",
     richDescription:
-      "Embrace a thriving commercial opportunity with these strategically located shops in Kiamunyi, Nakuru. These spacious and well-maintained shops offer a blank canvas for your entrepreneurial dreams. Whether you envision a bustling retail store, a vibrant salon, or a cozy café, these versatile spaces can accommodate a variety of business ventures. Situated in the heart of Kiamunyi, Nakuru, these shops place you amidst a bustling commercial hub, ensuring a steady flow of potential customers. The strategic location provides easy access to both foot traffic and vehicular access, maximizing your business's visibility and reach.At an affordable monthly rent of 7,000 Ksh, these strategically located shops offer exceptional value for your investment. Contact us today to schedule a viewing and secure your spot in this thriving commercial hub.",
+      "Embrace a thriving commercial opportunity with these strategically located shops in Nyali, Mombasa. These spacious and well-maintained shops offer a blank canvas for your entrepreneurial dreams. Whether you envision a bustling retail store, a vibrant salon, or a cozy café, these versatile spaces can accommodate a variety of business ventures. Situated in the heart of Nyali, Mombasa, these shops place you amidst a bustling commercial hub, ensuring a steady flow of potential customers. The strategic location provides easy access to both foot traffic and vehicular access, maximizing your business's visibility and reach.At an affordable monthly rent of 7,000 Ksh, these strategically located shops offer exceptional value for your investment. Contact us today to schedule a viewing and secure your spot in this thriving commercial hub.",
     amenities: [
       {
         icon: "/icons/parking-icon.png",
@@ -672,7 +672,7 @@ export const ForRent = [
   {
     id: 113,
     heading1: "3-Bedroom Home",
-    heading2: "Kiamunyi, Nakuru",
+    heading2: "Nyali, Mombasa",
     beds: 3,
     sf: 1916,
     bath: 1,
@@ -692,14 +692,14 @@ export const ForRent = [
     points: [
       "Spacious 3-bedroom home with ample living space",
       "Lush compound offering ample outdoor space for landscaping and recreation",
-      "Convenient location in Kiamunyi, Nakuru",
+      "Convenient location in Nyali, Mombasa",
       "Affordable asking price of 5.9 Million Ksh",
     ],
     time: Date.now() - 259200000,
     description:
-      "Discover a haven of comfort and sophistication with this impeccably designed 3-bedroom home nestled in the serene neighborhood of Kiamunyi, Nakuru. This spacious abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for families seeking a luxurious and well-appointed home.",
+      "Discover a haven of comfort and sophistication with this impeccably designed 3-bedroom home nestled in the serene neighborhood of Nyali, Mombasa. This spacious abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for families seeking a luxurious and well-appointed home.",
     richDescription:
-      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom home in Kiamunyi, Nakuru. This impeccably designed home exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious living space. The home's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous compound provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in the serene neighborhood of Kiamunyi, Nakuru, this home offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. At an affordable asking price of 5.9 Million Ksh, this spacious 3-bedroom home with its generous compound and convenient location offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility.",
+      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom home in Nyali, Mombasa. This impeccably designed home exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious living space. The home's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous compound provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in the serene neighborhood of Nyali, Mombasa, this home offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. At an affordable asking price of 5.9 Million Ksh, this spacious 3-bedroom home with its generous compound and convenient location offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility.",
     amenities: [
       {
         icon: "/icons/parking-icon.png",
@@ -735,13 +735,13 @@ export const ForSale = [
       "Spacious 3-bedroom home with ample living space",
       "Two additional self-contained servant quarters (DSQs)",
       "Serene 1/4 acre parcel of land offering ample outdoor space",
-      "Tranquil and secure neighborhood in Kiamunyi, Nakuru",
+      "Tranquil and secure neighborhood in Nyali, Mombasa",
     ],
     time: Date.now() - 86400000, // Current timestamp
     description:
-      "Serene Sanctuary: 3-Bedroom Home with Expansive Land Kiamunyi, Nakuru: Discover a haven of tranquility and spacious living with this captivating 3-bedroom home nestled amidst a 1/4 acre parcel of land in the serene neighborhood of Kiamunyi, Nakuru. This exquisite property offers a blend of modern comforts and a tranquil atmosphere, providing an ideal retreat for families and those seeking a peaceful lifestyle.",
+      "Serene Sanctuary: 3-Bedroom Home with Expansive Land Nyali, Mombasa: Discover a haven of tranquility and spacious living with this captivating 3-bedroom home nestled amidst a 1/4 acre parcel of land in the serene neighborhood of Nyali, Mombasa. This exquisite property offers a blend of modern comforts and a tranquil atmosphere, providing an ideal retreat for families and those seeking a peaceful lifestyle.",
     richDescription:
-      "Embrace a life of tranquility and spacious living with this captivating 3-bedroom home nestled amidst a 1/4 acre parcel of land in Kiamunyi, Nakuru.This exquisite property exudes warmth and serenity, offering a sanctuary for families and those seeking a peaceful escape from the hustle and bustle of city life. The home's spacious layout provides ample living space, with three well-appointed bedrooms, each offering a sense of comfort and privacy. The living area seamlessly blends elegance and functionality, featuring ample space for entertaining guests or enjoying moments of relaxation with loved ones. The kitchen, adorned with modern appliances, makes meal preparation a breeze, while the dining area provides a cozy setting for shared meals and family gatherings. Two additional self-contained servant quarters (DSQs) provide ample accommodation for domestic staff or extended family members, ensuring everyone's comfort and privacy. Step out onto the expansive 1/4 acre parcel of land and immerse yourself in the tranquility of nature. The lush surroundings offer ample space for outdoor activities, gardening, or simply enjoying the serene atmosphere Situated in the peaceful neighborhood of Kiamunyi, Nakuru, this property provides a tranquil retreat while still offering convenient access to essential amenities and the vibrant city center.Discover a lifestyle of harmony and spacious living with this captivating 3-bedroom home and expansive land. Contact us today to schedule a viewing and experience the tranquility of this exceptional property.",
+      "Embrace a life of tranquility and spacious living with this captivating 3-bedroom home nestled amidst a 1/4 acre parcel of land in Nyali, Mombasa.This exquisite property exudes warmth and serenity, offering a sanctuary for families and those seeking a peaceful escape from the hustle and bustle of city life. The home's spacious layout provides ample living space, with three well-appointed bedrooms, each offering a sense of comfort and privacy. The living area seamlessly blends elegance and functionality, featuring ample space for entertaining guests or enjoying moments of relaxation with loved ones. The kitchen, adorned with modern appliances, makes meal preparation a breeze, while the dining area provides a cozy setting for shared meals and family gatherings. Two additional self-contained servant quarters (DSQs) provide ample accommodation for domestic staff or extended family members, ensuring everyone's comfort and privacy. Step out onto the expansive 1/4 acre parcel of land and immerse yourself in the tranquility of nature. The lush surroundings offer ample space for outdoor activities, gardening, or simply enjoying the serene atmosphere Situated in the peaceful neighborhood of Nyali, Mombasa, this property provides a tranquil retreat while still offering convenient access to essential amenities and the vibrant city center.Discover a lifestyle of harmony and spacious living with this captivating 3-bedroom home and expansive land. Contact us today to schedule a viewing and experience the tranquility of this exceptional property.",
     amenities: [
       {
         icon: "/icons/garden-icon.png",
@@ -751,7 +751,7 @@ export const ForSale = [
   },
   {
     heading1: "Affordable Bungalow",
-    heading2: "Kiamunyi, Nakuru",
+    heading2: "Nyali, Mombasa",
     images: [
       "/BungalowSaleKiamunyiNakuru/1.jpeg",
       "/BungalowSaleKiamunyiNakuru/2.jpeg",
@@ -774,13 +774,13 @@ export const ForSale = [
     beds: 2,
     id: 2,
     description:
-      "Embrace a tranquil lifestyle amidst nature with this affordable bungalow nestled on a spacious 40 x 80 plot in the serene neighborhood of Kiamunyi, Nakuru. This well-maintained property offers a blend of spacious living areas, a serene atmosphere, and a convenient location, providing an ideal haven for families seeking a comfortable and affordable home.",
+      "Embrace a tranquil lifestyle amidst nature with this affordable bungalow nestled on a spacious 40 x 80 plot in the serene neighborhood of Nyali, Mombasa. This well-maintained property offers a blend of spacious living areas, a serene atmosphere, and a convenient location, providing an ideal haven for families seeking a comfortable and affordable home.",
     richDescription:
-      "Discover a sanctuary of comfort and affordability with this spacious bungalow in Kiamunyi, Nakuru.This well-maintained bungalow exudes an air of warmth and practicality, offering a haven for families seeking a spacious and affordable home. The bungalow's layout is designed for effortless living, with ample living areas and a sense of openness.The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings.Situated in the serene neighborhood of Kiamunyi, Nakuru, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center.At an affordable asking price of 5 Million Ksh, this spacious bungalow with its generous plot offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and affordability.",
+      "Discover a sanctuary of comfort and affordability with this spacious bungalow in Nyali, Mombasa.This well-maintained bungalow exudes an air of warmth and practicality, offering a haven for families seeking a spacious and affordable home. The bungalow's layout is designed for effortless living, with ample living areas and a sense of openness.The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings.Situated in the serene neighborhood of Nyali, Mombasa, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center.At an affordable asking price of 5 Million Ksh, this spacious bungalow with its generous plot offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and affordability.",
     points: [
       "Spacious bungalow with ample living space",
       "Generous 40 x 80 plot offering ample outdoor space",
-      "Tranquil and serene neighborhood in Kiamunyi, Nakuru",
+      "Tranquil and serene neighborhood in Nyali, Mombasa",
       "Affordable asking price of 4.7 Million",
     ],
     amenities: [
@@ -796,7 +796,7 @@ export const ForSale = [
   },
   {
     heading1: "3-Bedroom Hidden Roof Bungalow",
-    heading2: "Kiamunyi, Nakuru",
+    heading2: "Nyali, Mombasa",
     images: [
       "/huddenroofbungalow/1.jpeg",
       "/huddenroofbungalow/2.jpeg",
@@ -818,16 +818,16 @@ export const ForSale = [
     beds: 3,
     id: 3,
     description:
-      "Discover a haven of comfort and sophistication with this impeccably designed 3-bedroom hidden roof bungalow nestled in an upcoming gated community in the serene neighborhood of Kiamunyi, Nakuru. This spacious abode offers a blend of modern amenities, a tranquil atmosphere, and a secure environment, providing an ideal retreat for families seeking a luxurious and well-appointed home",
+      "Discover a haven of comfort and sophistication with this impeccably designed 3-bedroom hidden roof bungalow nestled in an upcoming gated community in the serene neighborhood of Nyali, Mombasa. This spacious abode offers a blend of modern amenities, a tranquil atmosphere, and a secure environment, providing an ideal retreat for families seeking a luxurious and well-appointed home",
     richDescription:
-      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom hidden roof bungalow in Kiamunyi, Nakuru. This impeccably designed bungalow exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious home. The bungalow's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in an upcoming gated community in the serene neighborhood of Kiamunyi, Nakuru, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. The gated community ensures enhanced security and peace of mind, allowing you to enjoy the tranquility of your surroundings without worries. At an affordable asking price of 5.8 Million Ksh, this spacious 3-bedroom hidden roof bungalow with its generous plot and secure gated community offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility",
+      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom hidden roof bungalow in Nyali, Mombasa. This impeccably designed bungalow exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious home. The bungalow's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in an upcoming gated community in the serene neighborhood of Nyali, Mombasa, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. The gated community ensures enhanced security and peace of mind, allowing you to enjoy the tranquility of your surroundings without worries. At an affordable asking price of 5.8 Million Ksh, this spacious 3-bedroom hidden roof bungalow with its generous plot and secure gated community offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility",
     points: [
       "Spacious 3-bedroom hidden roof bungalow with ample living space",
       "Serene balcony offering panoramic views and a breath of fresh air",
       "Lush 40 x 80 plot offering ample outdoor space for landscaping and recreation",
       "Affordable asking price of 5.8 Million",
       "Upcoming gated community providing enhanced security and peace of mind",
-      "Convenient location in Kiamunyi, Nakuru",
+      "Convenient location in Nyali, Mombasa",
     ],
     amenities: [
       {
@@ -866,7 +866,7 @@ export const ForSale = [
     description:
       "Step into a world of refined elegance and security with these impeccably designed 3-bedroom all-ensuite bungalows nestled within the prestigious gated community of Monarch Court in Barnabas, Nakuru. These spacious abodes offer a blend of modern amenities, a tranquil atmosphere, and a secure environment, providing an ideal haven for families seeking a luxurious and well-appointed home.",
     richDescription:
-      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom hidden roof bungalow in Kiamunyi, Nakuru. This impeccably designed bungalow exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious home. The bungalow's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in an upcoming gated community in the serene neighborhood of Kiamunyi, Nakuru, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. The gated community ensures enhanced security and peace of mind, allowing you to enjoy the tranquility of your surroundings without worries. At an affordable asking price of 5.8 Million Ksh, this spacious 3-bedroom hidden roof bungalow with its generous plot and secure gated community offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility",
+      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom hidden roof bungalow in Nyali, Mombasa. This impeccably designed bungalow exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious home. The bungalow's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in an upcoming gated community in the serene neighborhood of Nyali, Mombasa, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. The gated community ensures enhanced security and peace of mind, allowing you to enjoy the tranquility of your surroundings without worries. At an affordable asking price of 5.8 Million Ksh, this spacious 3-bedroom hidden roof bungalow with its generous plot and secure gated community offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility",
     points: [
       "Spacious 3-bedroom all-ensuite bungalows with ample living space",
       "Serene balconies offering panoramic views and a breath of fresh air",
@@ -887,7 +887,7 @@ export const ForSale = [
   },
   {
     heading1: "3-Bedroom Home",
-    heading2: "Kiamunyi, Nakuru",
+    heading2: "Nyali, Mombasa",
     beds: 3,
     price: "5.9M",
     rating: 4.9,
@@ -909,14 +909,14 @@ export const ForSale = [
     points: [
       "Spacious 3-bedroom home with ample living space",
       "Lush compound offering ample outdoor space for landscaping and recreation",
-      "Convenient location in Kiamunyi, Nakuru",
+      "Convenient location in Nyali, Mombasa",
       "Affordable asking price of 5.9 Million Ksh",
     ],
     time: Date.now() - 259200000,
     description:
-      "Discover a haven of comfort and sophistication with this impeccably designed 3-bedroom home nestled in the serene neighborhood of Kiamunyi, Nakuru. This spacious abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for families seeking a luxurious and well-appointed home.",
+      "Discover a haven of comfort and sophistication with this impeccably designed 3-bedroom home nestled in the serene neighborhood of Nyali, Mombasa. This spacious abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for families seeking a luxurious and well-appointed home.",
     richDescription:
-      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom home in Kiamunyi, Nakuru. This impeccably designed home exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious living space. The home's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous compound provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in the serene neighborhood of Kiamunyi, Nakuru, this home offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. At an affordable asking price of 5.9 Million Ksh, this spacious 3-bedroom home with its generous compound and convenient location offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility.",
+      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom home in Nyali, Mombasa. This impeccably designed home exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious living space. The home's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous compound provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in the serene neighborhood of Nyali, Mombasa, this home offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. At an affordable asking price of 5.9 Million Ksh, this spacious 3-bedroom home with its generous compound and convenient location offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility.",
     amenities: [
       {
         icon: "/icons/parking-icon.png",
@@ -1026,83 +1026,108 @@ export const blogs = [
 export const FeaturedData = [
   {
     heading1: "2bedroom Master Ensuite",
-    heading2: "Kiamunyi, Nakuru",
+    heading2: "Nyali, Mombasa",
     name: "Master Ensuite",
     propertyType: "apartment",
     images: [
-      "/2bedroom EnsuiteKiamunyiNakuru27k/1.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/2.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/3.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/4.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/5.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/6.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/7.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/8.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/9.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/10.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/12.jpeg",
-      "/2bedroom EnsuiteKiamunyiNakuru27k/13.jpeg",
+      "/assets/ella1e2bedroom/1.jpeg",
+      "/assets/ella1e2bedroom/2.jpeg",
+      "/assets/ella1e2bedroom/3.jpeg",
     ],
-    students: 150,
-    classes: 12,
-    price: "Ksh 27,000",
+    videos: ["/assets/ella1e2bedroom/4.mp4"],
+    price: "Ksh 10,000",
     rating: 4.2,
-    type: "Rent",
+    type: "AirBnb",
     bath: 1,
     sf: 2000,
     beds: 2,
     id: 300,
     description:
-      "Step into a world of refined elegance and comfort with this exquisite 2-bedroom master ensuite apartment in the serene neighborhood of Kiamunyi, Nakuru. This impeccably designed abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal haven for couples and small families seeking a luxurious and well-appointed living space.",
+      "Clean 2-bedroom apartment in Nyali, just 5 minutes walk to the beach. Features a swimming pool, elevator, and free Wi-Fi. Ideal for 4 guests. Price: 10,000 per night.",
     richDescription:
-      "Discover a sanctuary of elegance and comfort in this exquisite 2-bedroom master ensuite apartment in Kiamunyi, Nakuru.This impeccably designed apartment exudes an air of sophistication and warmth, providing a haven for those seeking a refined living experience. The apartment's layout is designed for effortless living, with two well-appointed bedrooms, including a luxurious master ensuite that offers a private retreat.The modern and well-equipped kitchen boasts sleek appliances and ample counter space, making meal preparation a culinary delight. Whether you're whipping up a quick breakfast or preparing a gourmet dinner, this kitchen caters to all your culinary needs.Step out onto the serene balcony and immerse yourself in the panoramic views, offering a tranquil escape from the bustling city life. Enjoy a cup of coffee while soaking in the surrounding vistas, or simply unwind and let your thoughts wander. Secure parking on the premises ensures peace of mind, allowing you to park your vehicle safely and conveniently. Situated in the serene neighborhood of Kiamunyi, Nakuru, this apartment places you within close proximity to an array of amenities, including shopping centers, restaurants, and recreational facilities. Explore the city's vibrant attractions and easily return to your cozy haven at the end of the day. At an affordable monthly rent of 27,000 Ksh, this exquisite 2-bedroom master ensuite apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury and convenience.",
+      "Indulge in coastal luxury at this pristine 2-bedroom apartment nestled in the heart of Nyali along Mt. Kenya Road. Perfectly situated, it offers easy access to the beach, just a leisurely 5-minute stroll away. Step into a realm of comfort and convenience as this apartment boasts a range of amenities designed to elevate your stay. Lounge by the inviting swimming pool, soak in the pool view from your balcony, or unwind in the well-appointed living spaces featuring plush furnishings and modern decor. The apartment accommodates up to 4 guests and features two spacious bedrooms, including a master ensuite for added privacy and comfort. Sleep soundly on queen-size beds adorned with premium linens, and enjoy the convenience of air conditioning and overhead fans to keep you cool and refreshed. Prepare delicious meals in the well-equipped kitchen, complete with modern appliances and ample countertop space. After a day of exploration, rejuvenate with a refreshing shower in the hot shower facilities provided. Stay connected with complimentary Wi-Fi and catch up on your favorite shows on the smart TV. Convenience is key with an elevator/lift available for easy access to your accommodation, and dedicated parking ensures hassle-free arrival and departure. Plus, the apartment is within walking distance to Quickmart supermarket, making it convenient to stock up on essentials during your stay. Experience coastal living at its finest at this Nyali gem, where comfort, style, and convenience converge for an unforgettable getaway.",
     points: [
-      "Two spacious bedrooms, including a luxurious master ensuite",
-      "Serene balcony offering panoramic views and a breath of fresh air",
-      "Convenient location in Kiamunyi, Nakuru",
-      "Affordable monthly rent of 27,000 Ksh",
+      "Located in Nyali along Mt. Kenya Road",
+      "2 bedrooms, master ensuite",
+      "Swimming pool and pool view",
+      "Elevator/lift access",
+      "Parking facilities available",
+      "Hot showers and free Wi-Fi",
+      "Air conditioning and overhead fans",
+      "Well-equipped kitchen",
+      "Quickmart supermarket within walking distance",
+      "Rate: 10,000 per night, maximum 4 guests",
     ],
     amenities: [
       {
         icon: "/icons/parking-icon.png",
         name: "Parking",
       },
+      {
+        icon: "/icons/wifi-icon.png",
+        name: "Wifi",
+      },
+      {
+        icon: "/icons/tv-icon.png",
+        name: "Smart Tv",
+      },
+      {
+        icon: "/icons/security-icon.png",
+        name: "Security",
+      },
+      {
+        icon: "/icons/elevator.png",
+        name: "Elevator",
+      },
+      {
+        icon: "/icons/shower.png",
+        name: "Hot shower",
+      },
     ],
   },
   {
-    heading1: "Affordable Bungalow",
-    heading2: "Kiamunyi, Nakuru",
-    propertyType: "owncompound",
-    name: "Bungalow",
+    heading1: "2 Bedroom",
+    heading2: "Nyali, Mombasa",
+    propertyType: "AirBnb",
+    name: "2 Bedroom",
     images: [
-      "/BungalowSaleKiamunyiNakuru/1.jpeg",
-      "/BungalowSaleKiamunyiNakuru/2.jpeg",
-      "/BungalowSaleKiamunyiNakuru/3.jpeg",
-      "/BungalowSaleKiamunyiNakuru/4.jpeg",
-      "/BungalowSaleKiamunyiNakuru/5.jpeg",
-      "/BungalowSaleKiamunyiNakuru/6.jpeg",
-      "/BungalowSaleKiamunyiNakuru/7.jpeg",
-      "/BungalowSaleKiamunyiNakuru/8.jpeg",
-      "/BungalowSaleKiamunyiNakuru/9.jpeg",
+      "/assets/ella2bedroom2/0.jpeg",
+      "/assets/ella2bedroom2/01.jpeg",
+      "/assets/ella2bedroom2/03.jpeg",
+      "/assets/ella2bedroom2/1.jpeg",
+      "/assets/ella2bedroom2/2.jpeg",
+      "/assets/ella2bedroom2/3.jpeg",
+      "/assets/ella2bedroom2/4.jpeg",
+      "/assets/ella2bedroom2/5.jpeg",
+      "/assets/ella2bedroom2/6.jpeg",
+      "/assets/ella2bedroom2/7.jpeg",
+      "/assets/ella2bedroom2/8.jpeg",
+      "/assets/ella2bedroom2/9.jpeg",
+      "/assets/ella2bedroom2/10.jpeg",
     ],
-    students: 130,
-    classes: 12,
-    price: "4.7M",
+    videos: ["/assets/ella2bedroom2/1.mp4"],
+    price: "10,000",
     rating: 4.7,
-    type: "Buy",
+    type: "AirBnb",
     bath: 2,
     sf: 3200,
     beds: 2,
     id: 301,
     description:
-      "Embrace a tranquil lifestyle amidst nature with this affordable bungalow nestled on a spacious 40 x 80 plot in the serene neighborhood of Kiamunyi, Nakuru. This well-maintained property offers a blend of spacious living areas, a serene atmosphere, and a convenient location, providing an ideal haven for families seeking a comfortable and affordable home.",
+      "Clean 2-bedroom apartment in Nyali, just 5 minutes walk to the beach. Features a swimming pool, elevator, and free Wi-Fi. Ideal for 4 guests. Price: 10,000 per night.",
     richDescription:
-      "Discover a sanctuary of comfort and affordability with this spacious bungalow in Kiamunyi, Nakuru.This well-maintained bungalow exudes an air of warmth and practicality, offering a haven for families seeking a spacious and affordable home. The bungalow's layout is designed for effortless living, with ample living areas and a sense of openness.The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings.Situated in the serene neighborhood of Kiamunyi, Nakuru, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center.At an affordable asking price of 5 Million Ksh, this spacious bungalow with its generous plot offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and affordability.",
+      "Indulge in coastal luxury at this pristine 2-bedroom apartment nestled in the heart of Nyali along Mt. Kenya Road. Perfectly situated, it offers easy access to the beach, just a leisurely 5-minute stroll away. Step into a realm of comfort and convenience as this apartment boasts a range of amenities designed to elevate your stay. Lounge by the inviting swimming pool, soak in the pool view from your balcony, or unwind in the well-appointed living spaces featuring plush furnishings and modern decor. The apartment accommodates up to 4 guests and features two spacious bedrooms, including a master ensuite for added privacy and comfort. Sleep soundly on queen-size beds adorned with premium linens, and enjoy the convenience of air conditioning and overhead fans to keep you cool and refreshed. Prepare delicious meals in the well-equipped kitchen, complete with modern appliances and ample countertop space. After a day of exploration, rejuvenate with a refreshing shower in the hot shower facilities provided. Stay connected with complimentary Wi-Fi and catch up on your favorite shows on the smart TV. Convenience is key with an elevator/lift available for easy access to your accommodation, and dedicated parking ensures hassle-free arrival and departure. Plus, the apartment is within walking distance to Quickmart supermarket, making it convenient to stock up on essentials during your stay. Experience coastal living at its finest at this Nyali gem, where comfort, style, and convenience converge for an unforgettable getaway.",
     points: [
-      "Spacious bungalow with ample living space",
-      "Generous 40 x 80 plot offering ample outdoor space",
-      "Tranquil and serene neighborhood in Kiamunyi, Nakuru",
-      "Affordable asking price of 4.7 Million",
+      "Located in Nyali along Mt. Kenya Road",
+      "2 bedrooms, master ensuite",
+      "Swimming pool and pool view",
+      "Elevator/lift access",
+      "Parking facilities available",
+      "Hot showers and free Wi-Fi",
+      "Air conditioning and overhead fans",
+      "Well-equipped kitchen",
+      "Quickmart supermarket within walking distance",
+      "Rate: 10,000 per night, maximum 4 guests",
     ],
     amenities: [
       {
@@ -1110,178 +1135,85 @@ export const FeaturedData = [
         name: "Parking",
       },
       {
-        icon: "/icons/garden-icon.png",
-        name: "Garden",
+        icon: "/icons/wifi-icon.png",
+        name: "Wifi",
       },
-    ],
-  },
-  {
-    id: 303,
-    heading1: "Affordable 2 Bedroom",
-    heading2: "Kiamunyi, Nakuru.",
-    name: "2 Bedroom",
-    propertyType: "apartment",
-    beds: 2,
-    sf: 1916,
-    rating: 4.7,
-    bath: 2.5,
-    price: "Ksh18,000",
-    type: "Rent",
-    images: [
-      "/2Bedroom-KiamunyiRent18k/7.jpeg",
-      "/2Bedroom-KiamunyiRent18k/1.jpeg",
-      "/2Bedroom-KiamunyiRent18k/2.jpeg",
-      "/2Bedroom-KiamunyiRent18k/3.jpeg",
-      "/2Bedroom-KiamunyiRent18k/4.jpeg",
-      "/2Bedroom-KiamunyiRent18k/5.jpeg",
-      "/2Bedroom-KiamunyiRent18k/6.jpeg",
-    ],
-    points: [
-      "Two spacious bedrooms, including a master ensuite",
-      "Serene balcony offering a breath of fresh air",
-      "Secure parking on the premises for peace of mind",
-      "Affordable monthly rent of 50,000 Ksh",
-      "Reliable 24/7 water supply for uninterrupted convenience",
-      "Convenient location in Kiamunyi, Nakuru",
-      "Affordable monthly rent of 18,000 Ksh",
-    ],
-    time: Date.now() - 259200000,
-    description:
-      "Elevate your living experience with this impeccably designed 2-bedroom master ensuite apartment nestled in the serene neighborhood of Kiamunyi, Nakuru. This well-appointed abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for individuals and couples seeking a comfortable and affordable living space.",
-    richDescription:
-      "Discover a haven of comfort and convenience in this impeccably designed 2-bedroom master ensuite apartment in Kiamunyi, Nakuru. This well-appointed apartment exudes an air of warmth and sophistication, providing a sanctuary for those seeking a refined living experience. The apartment's layout is designed for effortless living, with two well-appointed bedrooms, including a master ensuite that offers a luxurious and private retreat. The well-equipped kitchen boasts modern appliances and ample counter space, making meal preparation a breeze. Whether you're whipping up a quick breakfast or preparing a gourmet dinner, this kitchen caters to all your culinary needs. Step out onto the serene balcony and embrace the fresh air, offering a tranquil escape from the bustling city life. Enjoy a cup of coffee while soaking in the surrounding views, or simply unwind and let your thoughts wander. Secure parking on the premises ensures peace of mind, while the reliable 24/7 water supply guarantees uninterrupted access to this essential amenity. Situated in the serene neighborhood of Kiamunyi, Nakuru, this apartment places you within close proximity to an array of amenities, including shopping centers, restaurants, and recreational facilities. Explore the city's vibrant attractions and easily return to your cozy haven at the end of the day. At an affordable monthly rent of 18,000 Ksh, this 2-bedroom master ensuite apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and convenience.",
-    amenities: [
       {
-        icon: "/icons/parking-icon.png",
-        name: "Parking space",
+        icon: "/icons/tv-icon.png",
+        name: "Smart Tv",
+      },
+      {
+        icon: "/icons/security-icon.png",
+        name: "Security",
+      },
+      {
+        icon: "/icons/elevator.png",
+        name: "Elevator",
+      },
+      {
+        icon: "/icons/shower.png",
+        name: "Hot shower",
       },
     ],
   },
   {
     id: 302,
-    heading1: "2 bedroom ensuite apartment",
-    heading2: "Milimani, Nakuru.",
-    name: "2 Bedroom ensuite",
-    propertyType: "apartment",
-    beds: 2,
+    heading1: "Studio",
+    heading2: "Nyali, Mombasa.",
+    name: "Studio",
+    propertyType: "Studio apartment",
+    beds: 1,
     sf: 1916,
+    rating: 4.7,
     bath: 1,
-    rating: 4.6,
-    price: "Ksh30,000",
-    type: "Rent",
+    type: "Studio",
     images: [
-      "/Exquisite2bedroom-master-apartment-Rent - 30k/1.jpeg",
-      "/Exquisite2bedroom-master-apartment-Rent - 30k/3.jpeg",
-      "/Exquisite2bedroom-master-apartment-Rent - 30k/5.jpeg",
-      "/Exquisite2bedroom-master-apartment-Rent - 30k/4.jpeg",
-
-      "/Exquisite2bedroom-master-apartment-Rent - 30k/6.jpeg",
+      "/assets/studio1/01.jpeg",
+      "/assets/studio1/1.jpeg",
+      "/assets/studio1/2.jpeg",
+      "/assets/studio1/3.jpeg",
+      "/assets/studio1/4.jpeg",
+      "/assets/studio1/5.jpeg",
+      "/assets/studio1/6.jpeg",
+      "/assets/studio1/8.jpeg",
+      "/assets/studio1/9.jpeg",
+      "/assets/studio1/10.jpeg",
+      "/assets/studio1/11.jpeg",
+      "/assets/studio1/12.jpeg",
     ],
+    videos: ["/assets/studio1/1.mp4"],
+    price: "3,000",
     points: [
-      "Two spacious bedrooms, including a master ensuite",
-      "Open kitchen concept for a seamless living experience",
-      "Spacious bedrooms for ultimate comfort and relaxation",
-      "Convenient location in Milimani, Nakuru",
-      "Internet ready for seamless connectivity",
-      "Affordable monthly rent of 30,000 Ksh",
-      "CCTV surveillance for enhanced security",
-      "Secure parking for peace of mind",
-      "Laundry center on the rooftop for added convenience",
-      "Serene rooftop offering panoramic views",
-    ],
-    time: Date.now() - 172800000, // Two days (in milliseconds) before the current timestamp
-    description:
-      "Elevate your living experience with this exquisite 2-bedroom master ensuite apartment nestled in the heart of Milimani, Nakuru. This impeccably designed abode offers a blend of modern amenities, a tranquil atmosphere, and a prime location, providing an ideal retreat for individuals and couples seeking a luxurious and well-appointed living space.",
-    richDescription:
-      "Discover a haven of luxury and convenience in this exquisite 2-bedroom master ensuite apartment in Milimani, Nakuru. This impeccably designed apartment exudes an air of sophistication and warmth, providing a sanctuary for those seeking a refined living experience. The apartment's spacious layout is designed for effortless living, with two well-appointed bedrooms, including a master ensuite that offers a luxurious and private retreat. The open kitchen concept seamlessly integrates the living and dining areas, creating a seamless flow for entertaining guests or enjoying intimate meals. The modern appliances and ample counter space make meal preparation a culinary delight. Step out onto the serene rooftop and immerse yourself in the panoramic views, offering a tranquil escape from the bustling city life. Enjoy a cup of coffee while soaking in the surrounding vistas or host memorable gatherings under the open sky. The laundry center on the rooftop provides added convenience, ensuring your laundry chores are taken care of with ease. The lush garden offers a tranquil space to unwind amidst nature, while the secure parking and CCTV surveillance provide peace of mind. Situated in the heart of Milimani, Nakuru, this apartment places you within close proximity to an array of amenities, including shopping centers, restaurants, and recreational facilities. Explore the city's vibrant attractions and easily return to your luxurious haven at the end of the day. With internet ready for seamless connectivity, this apartment ensures you stay connected to the world around you. At an affordable monthly rent of 30,000 Ksh, this exquisite 2-bedroom master ensuite apartment offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury and convenience.",
-    amenities: [
-      {
-        icon: "/icons/parking-icon.png",
-        name: "parking",
-      },
-
-      {
-        icon: "/icons/wifi-icon.png",
-        name: "Internet ready",
-      },
-      {
-        icon: "/icons/security-icon.png",
-        name: "Security System",
-      },
-    ],
-  },
-  {
-    id: 304,
-    heading1: "Shops for Rent",
-    heading2: "Kiamunyi, Nakuru.",
-    propertyType: "shop",
-    name: "Shops",
-    beds: 0,
-    sf: 1916,
-    // bath: 2.5,
-    price: "Ksh7,000",
-    rating: 4.1,
-    type: "Rent",
-    images: [
-      "/ShopsRentKiamunyiNakuruRent7k/1.jpeg",
-      "/ShopsRentKiamunyiNakuruRent7k/2.jpeg",
-      "/ShopsRentKiamunyiNakuruRent7k/1.jpeg",
-    ],
-    points: [
-      "Spacious and well-maintained shops",
-      "Ideal for a variety of business ventures",
-      "Strategic location in Kiamunyi, Nakuru",
-      "Affordable monthly rent of 7,000 Ksh",
+      "Location: Nyali, Links Road",
+      "Proximity: 5 minutes from the beach and mall",
+      "Amenities: WiFi, air conditioning, hot shower, parking space, Smart TV, fully equipped kitchen",
+      "Affordable monthly rent of 50,000 Ksh",
+      "Reliable 24/7 water supply for uninterrupted convenience",
+      "Price: 3,000/- per night",
+      "Maximum Occupancy: 2 guests",
     ],
     time: Date.now() - 259200000,
     description:
-      "Establish your business in a thriving commercial hub with these strategically located shops in Kiamunyi, Nakuru. Offering a blend of affordability and accessibility, these shops provide an ideal base for entrepreneurs seeking to tap into a bustling market.",
+      "Discover modern studio apartments in Nyali, ideally situated just 5 minutes from the beach and mall. Enjoy amenities such as WiFi, air conditioning, hot showers, parking space, Smart TV, and a fully equipped kitchen. Perfect for a comfortable stay.",
     richDescription:
-      "Embrace a thriving commercial opportunity with these strategically located shops in Kiamunyi, Nakuru. These spacious and well-maintained shops offer a blank canvas for your entrepreneurial dreams. Whether you envision a bustling retail store, a vibrant salon, or a cozy café, these versatile spaces can accommodate a variety of business ventures. Situated in the heart of Kiamunyi, Nakuru, these shops place you amidst a bustling commercial hub, ensuring a steady flow of potential customers. The strategic location provides easy access to both foot traffic and vehicular access, maximizing your business's visibility and reach.At an affordable monthly rent of 7,000 Ksh, these strategically located shops offer exceptional value for your investment. Contact us today to schedule a viewing and secure your spot in this thriving commercial hub.",
+      "Nestled in the heart of Nyali, along the vibrant Links Road, our studio apartments offer the epitome of modern living. With a prime location just a stone's throw away from both the beach and the bustling mall, convenience and luxury are at your doorstep. Each studio apartment is thoughtfully designed to provide utmost comfort and functionality.Indulge in the convenience of complimentary WiFi, ensuring you stay connected throughout your stay. Beat the coastal heat with air conditioning, while the hot shower offers a refreshing retreat after a day of exploration.Forget the hassle of parking as we offer ample space for your convenience. Unwind in front of the Smart TV, catching up on your favorite shows or staying updated with the latest news.For culinary enthusiasts, our fully equipped kitchen provides all the essentials needed to whip up a delicious meal. Whether you're traveling solo or with a companion, our studio apartments offer the perfect retreat.",
     amenities: [
       {
-        icon: "/icons/parking-icon.png",
-        name: "Parking space",
+        icon: "/icons/wifi-icon.png",
+        name: "Wifi",
       },
-    ],
-  },
-  {
-    id: 305,
-    heading1: "Noble Home",
-    heading2: "Kiamunyi",
-    propertyType: "owncompound",
-    name: "Noble Home",
-    beds: 3,
-    sf: "1/4 acre",
-    // bath: 3,
-    price: "5.7M",
-    type: "Buy",
-    rating: 4.5,
-    images: [
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/9.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/1.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/3.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/4.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/5.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/6.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/7.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/8.jpeg",
-    ],
-    points: [
-      "Spacious 3-bedroom home with ample living space",
-      "Two additional self-contained servant quarters (DSQs)",
-      "Serene 1/4 acre parcel of land offering ample outdoor space",
-      "Tranquil and secure neighborhood in Kiamunyi, Nakuru",
-    ],
-    time: Date.now() - 86400000, // Current timestamp
-    description:
-      "Serene Sanctuary: 3-Bedroom Home with Expansive Land Kiamunyi, Nakuru: Discover a haven of tranquility and spacious living with this captivating 3-bedroom home nestled amidst a 1/4 acre parcel of land in the serene neighborhood of Kiamunyi, Nakuru. This exquisite property offers a blend of modern comforts and a tranquil atmosphere, providing an ideal retreat for families and those seeking a peaceful lifestyle.",
-    richDescription:
-      "Embrace a life of tranquility and spacious living with this captivating 3-bedroom home nestled amidst a 1/4 acre parcel of land in Kiamunyi, Nakuru.This exquisite property exudes warmth and serenity, offering a sanctuary for families and those seeking a peaceful escape from the hustle and bustle of city life. The home's spacious layout provides ample living space, with three well-appointed bedrooms, each offering a sense of comfort and privacy. The living area seamlessly blends elegance and functionality, featuring ample space for entertaining guests or enjoying moments of relaxation with loved ones. The kitchen, adorned with modern appliances, makes meal preparation a breeze, while the dining area provides a cozy setting for shared meals and family gatherings. Two additional self-contained servant quarters (DSQs) provide ample accommodation for domestic staff or extended family members, ensuring everyone's comfort and privacy. Step out onto the expansive 1/4 acre parcel of land and immerse yourself in the tranquility of nature. The lush surroundings offer ample space for outdoor activities, gardening, or simply enjoying the serene atmosphere Situated in the peaceful neighborhood of Kiamunyi, Nakuru, this property provides a tranquil retreat while still offering convenient access to essential amenities and the vibrant city center.Discover a lifestyle of harmony and spacious living with this captivating 3-bedroom home and expansive land. Contact us today to schedule a viewing and experience the tranquility of this exceptional property.",
-    amenities: [
       {
-        icon: "/icons/garden-icon.png",
-        name: "Garden",
+        icon: "/icons/tv-icon.png",
+        name: "Smart Tv",
+      },
+      {
+        icon: "/icons/security-icon.png",
+        name: "Security",
+      },
+
+      {
+        icon: "/icons/shower.png",
+        name: "Hot shower",
       },
     ],
   },
@@ -1371,7 +1303,7 @@ export const AirbnbsData = [
   {
     id: 402,
     heading1: "Own compound home",
-    heading2: "Olive Inn, Kiamunyi, Nakuru",
+    heading2: "Olive Inn, Nyali, Mombasa",
     beds: 2,
     sf: 1916,
     bath: 2,
@@ -1389,15 +1321,15 @@ export const AirbnbsData = [
     ],
     time: Date.now() - 86400000, // Current timestamp
     description:
-      "Immerse yourself in the epitome of luxury and privacy with this impeccably furnished 3-bedroom home nestled within its own private compound in the serene Olive Inn Estate, Kiamunyi, Nakuru. This captivating residence offers a blend of modern comforts, elegant décor, and a tranquil atmosphere, providing an ideal retreat for families and groups seeking a luxurious getaway.",
+      "Immerse yourself in the epitome of luxury and privacy with this impeccably furnished 3-bedroom home nestled within its own private compound in the serene Olive Inn Estate, Nyali, Mombasa. This captivating residence offers a blend of modern comforts, elegant décor, and a tranquil atmosphere, providing an ideal retreat for families and groups seeking a luxurious getaway.",
     richDescription:
-      "Step into a haven of luxury and tranquility with this exquisitely furnished 3-bedroom home in Olive Inn Estate, Kiamunyi, Nakuru.This captivating residence exudes elegance and warmth, offering a sanctuary for families and groups seeking a luxurious escape from the hustle and bustle of city life. The home's spacious layout provides ample living space, with three well-appointed bedrooms, each offering a sense of comfort and privacy. The living area seamlessly blends elegance and functionality, featuring plush furnishings that create a cozy and inviting atmosphere. Relax on the comfortable sofas and unwind with your favorite entertainment on the flat-screen TV. The well-equipped kitchen boasts modern appliances and ample counter space, making meal preparation a breeze. Whether you're whipping up a quick breakfast or preparing a gourmet dinner, this kitchen caters to all your culinary needs. Step out onto the serene private compound and embrace the tranquility of nature. The lush surroundings offer ample space for outdoor relaxation, barbeque gatherings, or simply enjoying the fresh air. Situated within the secure Olive Inn Estate in Kiamunyi, Nakuru, this home provides a tranquil retreat while still offering convenient access to essential amenities and the vibrant city center. At an affordable daily rate of 8,000 Ksh for the entire home, this impeccably furnished 3-bedroom residence offers exceptional value for your money. Contact us today to book your stay and experience the epitome of luxury and tranquility.",
+      "Step into a haven of luxury and tranquility with this exquisitely furnished 3-bedroom home in Olive Inn Estate, Nyali, Mombasa.This captivating residence exudes elegance and warmth, offering a sanctuary for families and groups seeking a luxurious escape from the hustle and bustle of city life. The home's spacious layout provides ample living space, with three well-appointed bedrooms, each offering a sense of comfort and privacy. The living area seamlessly blends elegance and functionality, featuring plush furnishings that create a cozy and inviting atmosphere. Relax on the comfortable sofas and unwind with your favorite entertainment on the flat-screen TV. The well-equipped kitchen boasts modern appliances and ample counter space, making meal preparation a breeze. Whether you're whipping up a quick breakfast or preparing a gourmet dinner, this kitchen caters to all your culinary needs. Step out onto the serene private compound and embrace the tranquility of nature. The lush surroundings offer ample space for outdoor relaxation, barbeque gatherings, or simply enjoying the fresh air. Situated within the secure Olive Inn Estate in Nyali, Mombasa, this home provides a tranquil retreat while still offering convenient access to essential amenities and the vibrant city center. At an affordable daily rate of 8,000 Ksh for the entire home, this impeccably furnished 3-bedroom residence offers exceptional value for your money. Contact us today to book your stay and experience the epitome of luxury and tranquility.",
     points: [
       "Spacious 3-bedroom home with ample living space",
       "Tastefully furnished living area with a cozy ambiance",
       "Well-equipped kitchen for effortless meal preparation",
       "Serene private compound offering outdoor relaxation",
-      "Convenient location in Olive Inn Estate, Kiamunyi, Nakuru",
+      "Convenient location in Olive Inn Estate, Nyali, Mombasa",
       "Affordable daily rate of 8,000 Ksh for the entire home",
     ],
     amenities: [

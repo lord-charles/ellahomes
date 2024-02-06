@@ -15,8 +15,6 @@ interface NavigationItem {
 }
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: true },
-  { name: "Rentals", href: "/listing", current: false },
-  { name: "Airbnbs", href: "/Airbnbs", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -65,21 +63,21 @@ const Navbar = () => {
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
                   <Image
-                    src={"/ella-homes-logo.png"}
+                    src={"/assets/logo/ellahomeslogo.jpeg"}
                     alt="Courses-Logo"
                     width={300}
                     height={300}
-                    className="block object-contain w-[200px] lg:hidden relative left-[-70px]"
+                    className="block object-contain w-[130px] lg:hidden relative left-[-20px]"
                     onClick={() => {
                       setIsOpen(false);
                     }}
                   />
                   <Image
-                    src={"/ella-homes-logo.png"}
+                    src={"/assets/logo/ellahomeslogo.jpeg"}
                     alt="Courses-Logo"
                     width={300}
                     height={300}
-                    className=" hidden object-contain w-[240px] mt-4 lg:block"
+                    className=" hidden object-contain w-[130px] mt-0 lg:block"
                     onClick={() => {
                       setIsOpen(false);
                     }}
@@ -89,7 +87,7 @@ const Navbar = () => {
 
               {/* LINKS */}
 
-              <div className="hidden lg:block m-auto">
+              <div className="hidden lg:block m-auto relative left-[160px]">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <CustomLink
@@ -110,6 +108,13 @@ const Navbar = () => {
                       </span>
                     </CustomLink>
                   ))}
+
+                  <Link
+                    href={"/contact"}
+                    className="opacity-75 block text-lg font-bold  hover:opacity-100 text-black font-serif text-[22px] px-2"
+                  >
+                    <h1>Contact</h1>
+                  </Link>
 
                   <div>
                     <Menu as="div" className="relative inline-block text-left">
@@ -173,12 +178,6 @@ const Navbar = () => {
                       </Transition>
                     </Menu>
                   </div>
-                  <Link
-                    href={"/contact"}
-                    className="opacity-75 block text-lg font-bold  hover:opacity-100 text-black font-serif text-[22px] px-2"
-                  >
-                    <h1>Contact</h1>
-                  </Link>
 
                   <div>
                     <Menu as="div" className="relative inline-block text-left">

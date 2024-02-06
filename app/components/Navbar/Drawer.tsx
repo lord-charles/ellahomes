@@ -29,11 +29,11 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
           <header className="p-4 flex items-center justify-between">
             <Link href="/">
               <Image
-                src={"/ella-homes-logo.png"}
+                src={"/assets/logo/ellahomeslogo.jpeg"}
                 alt="Courses-Logo"
                 width={500}
                 height={500}
-                className="object-contain w-[300px]"
+                className="object-contain w-[170px]"
                 onClick={() => {
                   setIsOpen(false);
                 }}

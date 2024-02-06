@@ -1,7 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Link from "next/link";
-import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 interface NavigationItem {
   name: string;
@@ -11,8 +9,6 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: true },
-  { name: "Rentals", href: "/listing", current: false },
-  { name: "Airbnbs", href: "/Airbnbs", current: false },
   { name: "Home for sale", href: "/sale", current: false },
   { name: "Land for sale", href: "/land", current: false },
   { name: "Contact", href: "/contact", current: false },
@@ -51,8 +47,8 @@ const Data = () => {
           </div>
         </div>
       </div>
-      <p className="text-[14px] relative top-[15vh] text-base text-gray-400 md:mt-0 md:order-1 xxxs:text-center">
-        Ellahomes © 2023 All Rights Reserved.{" "}
+      <p className="text-[13px] relative top-[25vh] text-base text-gray-400 md:mt-0 md:order-1 xxxs:text-center">
+        Ellahomes © 2024 All Rights Reserved.{" "}
         <a href="https://Ellahomeske.com/" target="_blank" rel="noopener"></a>
       </p>
     </div>
