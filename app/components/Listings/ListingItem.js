@@ -21,9 +21,6 @@ export default function ListingItem({ listing }) {
           {listing.time}
         </Moment>
         <div className="w-full p-[10px]">
-          <h2 className="font-semibold text-lg mb-[4px] text-black truncate">
-            {listing.heading1}
-          </h2>
           <div className="flex items-center space-x-1">
             <MdLocationOn className="h-4 w-4 text-green-600" />
             <p className="text-sm mb-[2px] text-gray-500 truncate">

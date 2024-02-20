@@ -14,13 +14,6 @@ import {
 } from "../../../utils/data";
 
 export default function HomeListings() {
-  // Offers
-
-  useEffect(() => {}, []);
-  // Places for rent
-  useEffect(() => {}, []);
-  // Places for rent
-  useEffect(() => {}, []);
   return (
     <div>
       <div className="max-w-6xl mx-auto pt-4  relative">
