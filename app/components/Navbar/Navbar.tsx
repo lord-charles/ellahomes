@@ -64,17 +64,17 @@ const Navbar = () => {
                 <Link href="/">
                   <Image
                     src={"/assets/logo/ellahomeslogo.jpeg"}
-                    alt="Courses-Logo"
+                    alt="Logo"
                     width={300}
                     height={300}
-                    className="block object-contain w-[130px] lg:hidden relative left-[-20px]"
+                    className="block object-contain w-[80px] lg:hidden relative left-[-20px]"
                     onClick={() => {
                       setIsOpen(false);
                     }}
                   />
                   <Image
                     src={"/assets/logo/ellahomeslogo.jpeg"}
-                    alt="Courses-Logo"
+                    alt="Logo"
                     width={300}
                     height={300}
                     className=" hidden object-contain w-[130px] mt-0 lg:block"
