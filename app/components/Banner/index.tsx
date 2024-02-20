@@ -72,7 +72,7 @@ const Banner = () => {
                 <Menu as="div" className="relative text-left ">
                   <div>
                     <Menu.Button className="flex gap-3 items-center xxxs:w-[78vw] md:w-auto lg:w-auto justify-between">
-                      <h2 className="font-semibold block text-black">Rent</h2>
+                      <h2 className="font-semibold block text-black">AirBnb</h2>
                       <ExpandMoreIcon />
                     </Menu.Button>
                   </div>
