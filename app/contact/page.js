@@ -47,11 +47,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h4 className="text-2xl uppercase font-heading">Address</h4>
-                  <p className="mt-2 leading-9 text-black">
-                    Atto Digi Mall <br />
-                    2nd Floor, Kiamunyi <br />
-                    Nakuru city
-                  </p>
+                  <p className="mt-2 leading-9 text-black">Nyali, Mombasa</p>
                 </div>
               </div>
 
@@ -100,7 +96,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h4 className="text-2xl uppercase font-heading">CALL US</h4>
-                  <p className="mt-2 leading-8 text-gray-700">+254740315545</p>
+                  <p className="mt-2 leading-8 text-gray-700">+254721636368</p>
                 </div>
               </div>
             </div>

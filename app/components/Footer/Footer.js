@@ -24,13 +24,11 @@ const Footer = () => {
                     Contact Info
                   </h4>
                   <p className="mt-6 leading-9 text-gray-300">
-                    Atto Digi Mall <br />
-                    2nd Floor, Kiamunyi <br />
-                    Nakuru city
+                    Nyali, Mombasa
                     <br />
                     Email : info@ellahomeske.com
                     <br />
-                    Phone : +254740315545
+                    Phone : +254721636368
                   </p>
                 </div>
                 <div className="md:w-1/2">
@@ -170,7 +168,7 @@ const Footer = () => {
                 </a>
               </div>
               <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1 xxxs:text-center">
-                ellahomes © 2023 All Rights Reserved.{" "}
+                ellahomes © 2024 All Rights Reserved.{" "}
                 <a
                   href="https://ellahomeske.com/"
                   target="_blank"

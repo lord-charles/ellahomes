@@ -27,9 +27,9 @@ const About = () => {
                 className="text-lg text-black lg:px-[100px]
               md:px-[100px] xxxs:px-[0px] py-4"
               >
-                EllaHomes is Nakuru&apos;s premier real estate and property
+                EllaHomes is Mombasa&apos;s premier real estate and property
                 marketing company. We specialize in staying up-to-date with all
-                things related to real estate in Nakuru. We&apos;re experts in
+                things related to real estate in Mombasa. We&apos;re experts in
                 finding the best homes and delivering the latest updates right
                 to you. Whether you&apos;re looking to rent or buy, we have you
                 covered with a wide selection of available properties.
@@ -50,9 +50,9 @@ const About = () => {
               md:px-[100px] xxxs:px-[0px] py-4"
               >
                 Are you a landlord or landlady looking to fill your properties
-                with tenants quickly? Contact us at 0740315545, and we&apos;ll
+                with tenants quickly? Contact us at 0731636368, and we&apos;ll
                 help you connect with potential renters. We&apos;re your go-to
-                real estate experts in Nakuru, dedicated to providing the best
+                real estate experts in Mombasa, dedicated to providing the best
                 solutions for your real estate needs.
               </p>
             </div>
@@ -134,7 +134,7 @@ const About = () => {
                   House Hunting
                 </p>
                 <p className="text-black">
-                  With our vast knowledge of Nakuru, at Ella Homes we make the
+                  With our vast knowledge of Mombasa, at Ella Homes we make the
                   process of finding your new home easier and faster. With a
                   wide range of houses and properties to choose from, house
                   hunting could not get more fun than at Ella Homes.
@@ -179,7 +179,6 @@ const About = () => {
                 <li>Furnished homes Management</li>
                 <li>Sale of property</li>
                 <li>Real Estate</li>
-                <li>Videography and photography</li>
               </ol>
             </div>
           </div>

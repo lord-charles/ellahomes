@@ -709,226 +709,7 @@ export const ForRent = [
   },
 ];
 
-export const ForSale = [
-  {
-    id: 1,
-    heading1: "Noble Home",
-    heading2: "Kiamunyi",
-    beds: 3,
-    sf: "1/4 acre",
-    // bath: 3,
-    price: "5.7M",
-    type: "Buy",
-    propertyType: "owncompound",
-
-    images: [
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/9.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/1.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/3.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/4.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/5.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/6.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/7.jpeg",
-      "/Home-in-Kiamunyi-Nakuru-Sale-price5.7m/8.jpeg",
-    ],
-    points: [
-      "Spacious 3-bedroom home with ample living space",
-      "Two additional self-contained servant quarters (DSQs)",
-      "Serene 1/4 acre parcel of land offering ample outdoor space",
-      "Tranquil and secure neighborhood in Nyali, Mombasa",
-    ],
-    time: Date.now() - 86400000, // Current timestamp
-    description:
-      "Serene Sanctuary: 3-Bedroom Home with Expansive Land Nyali, Mombasa: Discover a haven of tranquility and spacious living with this captivating 3-bedroom home nestled amidst a 1/4 acre parcel of land in the serene neighborhood of Nyali, Mombasa. This exquisite property offers a blend of modern comforts and a tranquil atmosphere, providing an ideal retreat for families and those seeking a peaceful lifestyle.",
-    richDescription:
-      "Embrace a life of tranquility and spacious living with this captivating 3-bedroom home nestled amidst a 1/4 acre parcel of land in Nyali, Mombasa.This exquisite property exudes warmth and serenity, offering a sanctuary for families and those seeking a peaceful escape from the hustle and bustle of city life. The home's spacious layout provides ample living space, with three well-appointed bedrooms, each offering a sense of comfort and privacy. The living area seamlessly blends elegance and functionality, featuring ample space for entertaining guests or enjoying moments of relaxation with loved ones. The kitchen, adorned with modern appliances, makes meal preparation a breeze, while the dining area provides a cozy setting for shared meals and family gatherings. Two additional self-contained servant quarters (DSQs) provide ample accommodation for domestic staff or extended family members, ensuring everyone's comfort and privacy. Step out onto the expansive 1/4 acre parcel of land and immerse yourself in the tranquility of nature. The lush surroundings offer ample space for outdoor activities, gardening, or simply enjoying the serene atmosphere Situated in the peaceful neighborhood of Nyali, Mombasa, this property provides a tranquil retreat while still offering convenient access to essential amenities and the vibrant city center.Discover a lifestyle of harmony and spacious living with this captivating 3-bedroom home and expansive land. Contact us today to schedule a viewing and experience the tranquility of this exceptional property.",
-    amenities: [
-      {
-        icon: "/icons/garden-icon.png",
-        name: "Garden",
-      },
-    ],
-  },
-  {
-    heading1: "Affordable Bungalow",
-    heading2: "Nyali, Mombasa",
-    images: [
-      "/BungalowSaleKiamunyiNakuru/1.jpeg",
-      "/BungalowSaleKiamunyiNakuru/2.jpeg",
-      "/BungalowSaleKiamunyiNakuru/3.jpeg",
-      "/BungalowSaleKiamunyiNakuru/4.jpeg",
-      "/BungalowSaleKiamunyiNakuru/5.jpeg",
-      "/BungalowSaleKiamunyiNakuru/6.jpeg",
-      "/BungalowSaleKiamunyiNakuru/7.jpeg",
-      "/BungalowSaleKiamunyiNakuru/8.jpeg",
-      "/BungalowSaleKiamunyiNakuru/9.jpeg",
-    ],
-    students: 130,
-    classes: 12,
-    price: "4.7M",
-    rating: 4.7,
-    type: "Buy",
-    propertyType: "owncompound",
-    bath: 2,
-    sf: 3200,
-    beds: 2,
-    id: 2,
-    description:
-      "Embrace a tranquil lifestyle amidst nature with this affordable bungalow nestled on a spacious 40 x 80 plot in the serene neighborhood of Nyali, Mombasa. This well-maintained property offers a blend of spacious living areas, a serene atmosphere, and a convenient location, providing an ideal haven for families seeking a comfortable and affordable home.",
-    richDescription:
-      "Discover a sanctuary of comfort and affordability with this spacious bungalow in Nyali, Mombasa.This well-maintained bungalow exudes an air of warmth and practicality, offering a haven for families seeking a spacious and affordable home. The bungalow's layout is designed for effortless living, with ample living areas and a sense of openness.The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings.Situated in the serene neighborhood of Nyali, Mombasa, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center.At an affordable asking price of 5 Million Ksh, this spacious bungalow with its generous plot offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of comfort and affordability.",
-    points: [
-      "Spacious bungalow with ample living space",
-      "Generous 40 x 80 plot offering ample outdoor space",
-      "Tranquil and serene neighborhood in Nyali, Mombasa",
-      "Affordable asking price of 4.7 Million",
-    ],
-    amenities: [
-      {
-        icon: "/icons/parking-icon.png",
-        name: "Parking",
-      },
-      {
-        icon: "/icons/garden-icon.png",
-        name: "Garden",
-      },
-    ],
-  },
-  {
-    heading1: "3-Bedroom Hidden Roof Bungalow",
-    heading2: "Nyali, Mombasa",
-    images: [
-      "/huddenroofbungalow/1.jpeg",
-      "/huddenroofbungalow/2.jpeg",
-      "/huddenroofbungalow/3.jpeg",
-      "/huddenroofbungalow/4.jpeg",
-      "/huddenroofbungalow/5.jpeg",
-      "/huddenroofbungalow/6.jpeg",
-      "/huddenroofbungalow/7.jpeg",
-      "/huddenroofbungalow/8.jpeg",
-    ],
-    students: 130,
-    classes: 12,
-    price: "5.8M",
-    rating: 4.9,
-    type: "Buy",
-    propertyType: "owncompound",
-    bath: 2,
-    sf: 3200,
-    beds: 3,
-    id: 3,
-    description:
-      "Discover a haven of comfort and sophistication with this impeccably designed 3-bedroom hidden roof bungalow nestled in an upcoming gated community in the serene neighborhood of Nyali, Mombasa. This spacious abode offers a blend of modern amenities, a tranquil atmosphere, and a secure environment, providing an ideal retreat for families seeking a luxurious and well-appointed home",
-    richDescription:
-      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom hidden roof bungalow in Nyali, Mombasa. This impeccably designed bungalow exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious home. The bungalow's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in an upcoming gated community in the serene neighborhood of Nyali, Mombasa, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. The gated community ensures enhanced security and peace of mind, allowing you to enjoy the tranquility of your surroundings without worries. At an affordable asking price of 5.8 Million Ksh, this spacious 3-bedroom hidden roof bungalow with its generous plot and secure gated community offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility",
-    points: [
-      "Spacious 3-bedroom hidden roof bungalow with ample living space",
-      "Serene balcony offering panoramic views and a breath of fresh air",
-      "Lush 40 x 80 plot offering ample outdoor space for landscaping and recreation",
-      "Affordable asking price of 5.8 Million",
-      "Upcoming gated community providing enhanced security and peace of mind",
-      "Convenient location in Nyali, Mombasa",
-    ],
-    amenities: [
-      {
-        icon: "/icons/parking-icon.png",
-        name: "Parking",
-      },
-      {
-        icon: "/icons/garden-icon.png",
-        name: "Garden",
-      },
-    ],
-  },
-  {
-    heading1: "3-Bedroom All-Ensuite Bungalows",
-    heading2: "Monarch Court, Barnabas, Nakuru",
-    images: [
-      "/3bedroom-ensuite-bungalows/1.jpeg",
-      "/3bedroom-ensuite-bungalows/2.jpeg",
-      "/3bedroom-ensuite-bungalows/3.jpeg",
-      "/3bedroom-ensuite-bungalows/4.jpeg",
-      "/3bedroom-ensuite-bungalows/5.jpeg",
-      "/3bedroom-ensuite-bungalows/6.jpeg",
-      "/3bedroom-ensuite-bungalows/7.jpeg",
-      "/3bedroom-ensuite-bungalows/8.jpeg",
-    ],
-    students: 130,
-    classes: 12,
-    price: "9M",
-    rating: 4.9,
-    type: "Buy",
-    propertyType: "owncompound",
-    bath: 2,
-    sf: 3200,
-    beds: 3,
-    id: 4,
-    description:
-      "Step into a world of refined elegance and security with these impeccably designed 3-bedroom all-ensuite bungalows nestled within the prestigious gated community of Monarch Court in Barnabas, Nakuru. These spacious abodes offer a blend of modern amenities, a tranquil atmosphere, and a secure environment, providing an ideal haven for families seeking a luxurious and well-appointed home.",
-    richDescription:
-      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom hidden roof bungalow in Nyali, Mombasa. This impeccably designed bungalow exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious home. The bungalow's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous 40 x 80 plot provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in an upcoming gated community in the serene neighborhood of Nyali, Mombasa, this bungalow offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. The gated community ensures enhanced security and peace of mind, allowing you to enjoy the tranquility of your surroundings without worries. At an affordable asking price of 5.8 Million Ksh, this spacious 3-bedroom hidden roof bungalow with its generous plot and secure gated community offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility",
-    points: [
-      "Spacious 3-bedroom all-ensuite bungalows with ample living space",
-      "Serene balconies offering panoramic views and a breath of fresh air",
-      "Secure gated community of Monarch Court providing enhanced security and peace of mind",
-      "Affordable asking price of 9 Million Ksh (Cash) or 9.5 Million Ksh (Installments)",
-      "Convenient location in Barnabas, Nakuru",
-    ],
-    amenities: [
-      {
-        icon: "/icons/parking-icon.png",
-        name: "Parking",
-      },
-      {
-        icon: "/icons/garden-icon.png",
-        name: "Garden",
-      },
-    ],
-  },
-  {
-    heading1: "3-Bedroom Home",
-    heading2: "Nyali, Mombasa",
-    beds: 3,
-    price: "5.9M",
-    rating: 4.9,
-    type: "Buy",
-    propertyType: "owncompound",
-    bath: 2,
-    sf: 3200,
-    id: 5,
-    images: [
-      "/3bedroomhomeKiamunyi5.9m/1.jpeg",
-      "/3bedroomhomeKiamunyi5.9m/2.jpeg",
-      "/3bedroomhomeKiamunyi5.9m/3.jpeg",
-      "/3bedroomhomeKiamunyi5.9m/4.jpeg",
-      "/3bedroomhomeKiamunyi5.9m/5.jpeg",
-      "/3bedroomhomeKiamunyi5.9m/6.jpeg",
-      "/3bedroomhomeKiamunyi5.9m/7.jpeg",
-      "/3bedroomhomeKiamunyi5.9m/8.jpeg",
-    ],
-    points: [
-      "Spacious 3-bedroom home with ample living space",
-      "Lush compound offering ample outdoor space for landscaping and recreation",
-      "Convenient location in Nyali, Mombasa",
-      "Affordable asking price of 5.9 Million Ksh",
-    ],
-    time: Date.now() - 259200000,
-    description:
-      "Discover a haven of comfort and sophistication with this impeccably designed 3-bedroom home nestled in the serene neighborhood of Nyali, Mombasa. This spacious abode offers a blend of modern amenities, a tranquil atmosphere, and a convenient location, providing an ideal retreat for families seeking a luxurious and well-appointed home.",
-    richDescription:
-      "Embrace a lifestyle of elegance and tranquility with this exquisite 3-bedroom home in Nyali, Mombasa. This impeccably designed home exudes an air of sophistication and warmth, offering a haven for families seeking a spacious and luxurious living space. The home's layout is designed for effortless living, with three well-appointed bedrooms, a modern kitchen that caters to all your culinary needs, and a serene balcony that offers panoramic views. The generous compound provides ample outdoor space, allowing you to create a tranquil garden, host outdoor gatherings, or simply enjoy the fresh air and serenity of your surroundings. Situated in the serene neighborhood of Nyali, Mombasa, this home offers a peaceful retreat from the bustling city life while still providing convenient access to amenities and the city center. At an affordable asking price of 5.9 Million Ksh, this spacious 3-bedroom home with its generous compound and convenient location offers exceptional value for your money. Contact us today to schedule a viewing and experience the epitome of luxury, comfort, and tranquility.",
-    amenities: [
-      {
-        icon: "/icons/parking-icon.png",
-        name: "Parking space",
-      },
-      {
-        icon: "/icons/garden-icon.png",
-        name: "Garden",
-      },
-    ],
-  },
-];
+export const ForSale = [];
 
 export const blogs = [
   {
@@ -1211,6 +992,77 @@ export const FeaturedData = [
         name: "Security",
       },
 
+      {
+        icon: "/icons/shower.png",
+        name: "Hot shower",
+      },
+    ],
+  },
+  {
+    heading1: "2 Bedroom",
+    heading2: "Nyali, Mombasa",
+    propertyType: "AirBnb",
+    name: "2 Bedroom",
+    images: [
+      "/assets/ella2bedroom2/0.jpeg",
+      "/assets/ella2bedroom2/01.jpeg",
+      "/assets/ella2bedroom2/03.jpeg",
+      "/assets/ella2bedroom2/1.jpeg",
+      "/assets/ella2bedroom2/2.jpeg",
+      "/assets/ella2bedroom2/3.jpeg",
+      "/assets/ella2bedroom2/4.jpeg",
+      "/assets/ella2bedroom2/5.jpeg",
+      "/assets/ella2bedroom2/6.jpeg",
+      "/assets/ella2bedroom2/7.jpeg",
+      "/assets/ella2bedroom2/8.jpeg",
+      "/assets/ella2bedroom2/9.jpeg",
+      "/assets/ella2bedroom2/10.jpeg",
+    ],
+    videos: ["/assets/ella2bedroom2/1.mp4"],
+    price: "10,000",
+    rating: 4.7,
+    type: "AirBnb",
+    bath: 2,
+    sf: 3200,
+    beds: 2,
+    id: 303,
+    description:
+      "Clean 2-bedroom apartment in Nyali, just 5 minutes walk to the beach. Features a swimming pool, elevator, and free Wi-Fi. Ideal for 4 guests. Price: 10,000 per night.",
+    richDescription:
+      "Indulge in coastal luxury at this pristine 2-bedroom apartment nestled in the heart of Nyali along Mt. Kenya Road. Perfectly situated, it offers easy access to the beach, just a leisurely 5-minute stroll away. Step into a realm of comfort and convenience as this apartment boasts a range of amenities designed to elevate your stay. Lounge by the inviting swimming pool, soak in the pool view from your balcony, or unwind in the well-appointed living spaces featuring plush furnishings and modern decor. The apartment accommodates up to 4 guests and features two spacious bedrooms, including a master ensuite for added privacy and comfort. Sleep soundly on queen-size beds adorned with premium linens, and enjoy the convenience of air conditioning and overhead fans to keep you cool and refreshed. Prepare delicious meals in the well-equipped kitchen, complete with modern appliances and ample countertop space. After a day of exploration, rejuvenate with a refreshing shower in the hot shower facilities provided. Stay connected with complimentary Wi-Fi and catch up on your favorite shows on the smart TV. Convenience is key with an elevator/lift available for easy access to your accommodation, and dedicated parking ensures hassle-free arrival and departure. Plus, the apartment is within walking distance to Quickmart supermarket, making it convenient to stock up on essentials during your stay. Experience coastal living at its finest at this Nyali gem, where comfort, style, and convenience converge for an unforgettable getaway.",
+    points: [
+      "Located in Nyali along Mt. Kenya Road",
+      "2 bedrooms, master ensuite",
+      "Swimming pool and pool view",
+      "Elevator/lift access",
+      "Parking facilities available",
+      "Hot showers and free Wi-Fi",
+      "Air conditioning and overhead fans",
+      "Well-equipped kitchen",
+      "Quickmart supermarket within walking distance",
+      "Rate: 10,000 per night, maximum 4 guests",
+    ],
+    amenities: [
+      {
+        icon: "/icons/parking-icon.png",
+        name: "Parking",
+      },
+      {
+        icon: "/icons/wifi-icon.png",
+        name: "Wifi",
+      },
+      {
+        icon: "/icons/tv-icon.png",
+        name: "Smart Tv",
+      },
+      {
+        icon: "/icons/security-icon.png",
+        name: "Security",
+      },
+      {
+        icon: "/icons/elevator.png",
+        name: "Elevator",
+      },
       {
         icon: "/icons/shower.png",
         name: "Hot shower",

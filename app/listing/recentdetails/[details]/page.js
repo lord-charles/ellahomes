@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { RecentOffers } from "@/utils/data";
+import { FeaturedData } from "@/utils/data";
 
 const PropertyDetail = ({ params }) => {
   const { details } = params;
   console.log(details);
-  const filteredRecentOffers = RecentOffers.filter(
+  const filteredFeaturedData = FeaturedData.filter(
     (item) => item.id !== details
   );
 
@@ -25,10 +25,10 @@ const PropertyDetail = ({ params }) => {
       <div className="px-6 py-20 mt-[340px]">
         <div className="relative max-w-6xl pt-16 pb-10 mx-auto md:pt-20">
           <h1 className="md:text-3xl lg:text-3xl  xxxs:text-2xl  leading-10 text-center uppercase font-heading">
-            {RecentOffers[details - 200].heading1}
+            {FeaturedData[details - 300].heading1}
           </h1>
           <p className="mt-2 text-center text-gray-700">
-            {RecentOffers[details - 200].heading2}
+            {FeaturedData[details - 300].heading2}
           </p>
         </div>
         <div className="max-w-6xl mx-auto">
@@ -37,13 +37,13 @@ const PropertyDetail = ({ params }) => {
               <div className="flex items-end space-x-4">
                 <div className="flex flex-col">
                   <span className="mb-2 text-sm font-semibold text-gray-600 uppercase">
-                    {RecentOffers[details - 200].type}
+                    {FeaturedData[details - 300].type}
                   </span>
                   <span className="flex items-baseline lg:text-4xl md:text-4xl xxxs:text-xl font-semibold text-red-400">
-                    {RecentOffers[details - 200].price}
+                    {FeaturedData[details - 300].price}
                     <span> </span>
                     <sup className="text-xs text-gray-500 -top-0.5 pl-1">
-                      {RecentOffers[details - 200].type === "Rent"
+                      {FeaturedData[details - 300].type === "Rent"
                         ? "/Month"
                         : null}
                     </sup>
@@ -64,7 +64,7 @@ const PropertyDetail = ({ params }) => {
             <div className="grid grid-rows-2 gap-4 mt-10 md:grid-cols-2 lg:grid-cols-3 aspect-[16/7]">
               <div className="relative col-span-2 row-span-2">
                 <Image
-                  src={RecentOffers[details - 200].images[0]}
+                  src={FeaturedData[details - 300].images[0]}
                   alt="Property 5"
                   layout="fill"
                   objectFit="cover"
@@ -72,7 +72,7 @@ const PropertyDetail = ({ params }) => {
               </div>
               <div className="relative">
                 <Image
-                  src={RecentOffers[details - 200].images[1]}
+                  src={FeaturedData[details - 300].images[1]}
                   alt="Property 6"
                   layout="fill"
                   objectFit="cover"
@@ -80,7 +80,7 @@ const PropertyDetail = ({ params }) => {
               </div>
               <div className="relative">
                 <Image
-                  src={RecentOffers[details - 200].images[2]}
+                  src={FeaturedData[details - 300].images[2]}
                   alt="Property 9"
                   layout="fill"
                   objectFit="cover"
@@ -94,13 +94,13 @@ const PropertyDetail = ({ params }) => {
                 Overview
               </h4>
               <p className="mt-4 leading-9 text-gray-600">
-                {RecentOffers[details - 200].description}
+                {FeaturedData[details - 300].description}
               </p>
             </div>
             <div className="pt-10">
               <h4 className="text-xl uppercase font-heading">Amenities</h4>
               <div className="grid gap-6 mt-8 md:grid-cols-3">
-                {RecentOffers[details - 200].amenities.map((item, index) => {
+                {FeaturedData[details - 300].amenities.map((item, index) => {
                   return (
                     <div key={index} className="flex items-center space-x-3">
                       <Image
@@ -121,7 +121,7 @@ const PropertyDetail = ({ params }) => {
               <h2 className="text-xl pb-5 uppercase font-heading font-semibold">
                 Key Features:
               </h2>
-              {RecentOffers[details - 1].points?.map((item, index) => {
+              {FeaturedData[details - 1].points?.map((item, index) => {
                 return (
                   <ol className="custom-list ml-10" key={index}>
                     <li>{item}</li>
@@ -135,7 +135,7 @@ const PropertyDetail = ({ params }) => {
                 Description
               </h2>
               <p className="mt-2 text-gray-600">
-                {RecentOffers[details - 200].richDescription}
+                {FeaturedData[details - 300].richDescription}
               </p>
             </div>
           </div>
@@ -143,9 +143,9 @@ const PropertyDetail = ({ params }) => {
             <h4 class="mt-20 text-xl uppercase font-heading font-semibold">
               gallery
             </h4>
-
+            <h4 class="mt-4  text-[17px]">Images</h4>
             <div className="grid gap-8 mt-5 lg:grid-cols-3  md:grid-cols-3 xxxs:grid-cols-1 place-items-center">
-              {RecentOffers[details - 200].images.map((item, index) => {
+              {FeaturedData[details - 300].images.map((item, index) => {
                 return (
                   <div key={index} className="relative">
                     <Image
@@ -159,6 +159,26 @@ const PropertyDetail = ({ params }) => {
                 );
               })}
             </div>
+            {FeaturedData[details - 300].videos && (
+              <div>
+                <h4 class="mt-4  text-[17px]">Video</h4>
+                <div className="grid gap-8 mt-5 lg:grid-cols-3  md:grid-cols-3 xxxs:grid-cols-1 place-items-center">
+                  {FeaturedData[details - 300].videos?.map((item, index) => {
+                    return (
+                      <div key={index} className="relative">
+                        <video
+                          controls
+                          className="object-cover w-[400px] h-[200px]"
+                        >
+                          <source src={item} />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </div>
           <div class="pt-20">
             <div class="">
@@ -168,7 +188,7 @@ const PropertyDetail = ({ params }) => {
             </div>
             <div class="relative mt-6 aspect-video">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37633.65975720456!2d-73.88896464710062!3d40.67982311122512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c445213731d%3A0x19566ced90a1b555!2sCypress%20Hills%2C%20Brooklyn%2C%20NY%2011233%2C%20USA!5e0!3m2!1sen!2sin!4v1654532259365!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3980.002636260912!2d39.72759331518574!3d-4.0198385787440225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMDEnMTEuNCJTIDM5wrA0Myc0OC43IkU!5e0!3m2!1sen!2ske!4v1707229243307!5m2!1sen!2ske"
                 width="1152"
                 height="648"
                 class="w-full h-full border-0"
@@ -182,7 +202,7 @@ const PropertyDetail = ({ params }) => {
             <h4 class="text-xl uppercase font-heading font-semibold">Share:</h4>
             <div class="mt-5">
               <div class="flex space-x-6 md:order-2">
-                <a href="#" class="text-gray-400 hover:text-gray-200">
+                <a href="#" class="text-gray-400 hover:text-gray-300">
                   <span class="sr-only">Facebook</span>
                   <svg
                     class="w-6 h-6"
@@ -197,7 +217,7 @@ const PropertyDetail = ({ params }) => {
                     ></path>
                   </svg>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-gray-200">
+                <a href="#" class="text-gray-400 hover:text-gray-300">
                   <span class="sr-only">Instagram</span>
                   <svg
                     class="w-6 h-6"
@@ -212,7 +232,7 @@ const PropertyDetail = ({ params }) => {
                     ></path>
                   </svg>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-gray-200">
+                <a href="#" class="text-gray-400 hover:text-gray-300">
                   <span class="sr-only">Twitter</span>
                   <svg
                     class="w-6 h-6"
@@ -223,7 +243,7 @@ const PropertyDetail = ({ params }) => {
                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
                   </svg>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-gray-200">
+                <a href="#" class="text-gray-400 hover:text-gray-300">
                   <span class="sr-only">GitHub</span>
                   <svg
                     class="w-6 h-6"
@@ -238,7 +258,7 @@ const PropertyDetail = ({ params }) => {
                     ></path>
                   </svg>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-gray-200">
+                <a href="#" class="text-gray-400 hover:text-gray-300">
                   <span class="sr-only">Dribbble</span>
                   <svg
                     class="w-6 h-6"

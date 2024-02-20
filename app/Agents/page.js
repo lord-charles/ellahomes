@@ -159,15 +159,11 @@ const Agents = () => {
               </div>
               <div className="space-y-1">
                 <h4 className="text-sm font-medium text-gray-900">Phone</h4>
-                <p className="text-gray-600">+254740315545</p>
+                <p className="text-gray-600">+254721636368</p>
               </div>
               <div className="space-y-1">
                 <h4 className="text-sm font-medium text-gray-900">Address</h4>
-                <p className="mt-2 leading-9 text-black">
-                  Atto Digi Mall <br />
-                  2nd Floor, Kiamunyi <br />
-                  Nakuru city
-                </p>
+                <p className="mt-2 leading-9 text-black">Nyali, Mombasa</p>
               </div>
             </div>
           </div>
