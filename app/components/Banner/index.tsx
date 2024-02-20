@@ -100,7 +100,7 @@ const Banner = () => {
                               )}
                               onClick={() => setnavigation("/listing")}
                             >
-                              Rent
+                              AirBnb
                             </a>
                           )}
                         </Menu.Item>
