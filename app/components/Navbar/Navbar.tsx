@@ -26,10 +26,8 @@ function classNames(...classes: string[]) {
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const [currentLink, setCurrentLink] = useState("/");
   const [language, setLanguage] = useState("English");
   const [currency, setCurrency] = useState("KSH");
-  const [firstName, setFirstName] = useState("");
   return (
     <Disclosure as="nav">
       <>
