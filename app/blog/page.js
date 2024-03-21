@@ -17,7 +17,7 @@ const Blog = () => {
   return (
     <main className="flex flex-col flex-1">
       <div className="pb-0">
-        <div className="absolute xxxs:top-[9vh] lg:top-[11vh] z-[1]">
+        <div className="absolute xxxs:top-[25vh] lg:top-[25vh] z-[1]">
           <Image
             src="/banners/bg3.jpeg"
             width={3000}

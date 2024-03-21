@@ -10,7 +10,7 @@ const Index = () => {
             <div className="relative w-full h-full border-8 border-white shadow-2xl lg:scale-125 ring-1 ring-gray-100">
               <Image
                 alt="Featured Villa"
-                src="/huddenroofbungalow/1.jpeg"
+                src="https://res.cloudinary.com/dn3q6mcwp/image/upload/v1709099459/betty%20Airbnb/villa/vieew7z7bwqxaxs2vqtb.jpg"
                 layout="fill"
                 objectFit="cover"
               />
@@ -20,7 +20,7 @@ const Index = () => {
                 <span className="font-medium text-red-600 uppercase">
                   STARTING AT
                 </span>
-                <span className="text-xl f text-red-600">5.8M</span>
+                <span className="text-[15px] f text-red-600">Ksh 30,000</span>
               </div>
             </div>
           </div>

@@ -55,7 +55,7 @@ const FAQ = () => {
   return (
     <main className="flex flex-col flex-1">
       <div>
-        <div className="absolute xxxs:top-[9vh] lg:top-[11vh] z-[1]">
+        <div className="absolute xxxs:top-[25vh] lg:top-[25vh] z-[1]">
           <Image
             src="/banners/bg4.jpeg"
             width={3000}

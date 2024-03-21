@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import { nextui } from "@nextui-org/react";
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +8,7 @@ module.exports = {
 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -34,6 +36,7 @@ module.exports = {
         gunmetalgray: "#363636",
         "gray-blue": "rgba(105, 120, 131, 0.16)",
         "dark-red": "rgba(44, 9, 11, 0.8)",
+        bluish: "#B4C7ED",
       },
       fontSize: {
         xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -65,5 +68,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };

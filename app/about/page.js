@@ -4,8 +4,8 @@ import Image from "next/image";
 const About = () => {
   return (
     <main className="flex flex-col flex-1">
-      <div className="pb-0">
-        <div className="absolute xxxs:top-[9vh] lg:top-[11vh] z-[1]">
+      <div>
+        <div className="absolute top-[25vh] z-[1]">
           <Image
             src="/banners/bg4.jpeg"
             width={3000}

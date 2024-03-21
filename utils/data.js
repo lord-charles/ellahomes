@@ -1192,3 +1192,34 @@ export const AirbnbsData = [
     ],
   },
 ];
+
+
+export const CorouselImages = [
+  {
+    image: "/assets/Carousel/3.jpeg",
+  },
+  {
+    image: "/assets/Carousel/4.jpeg",
+  },
+  {
+    image: "/assets/Carousel/5.jpeg",
+  },
+  {
+    image: "/assets/Carousel/6.jpeg",
+  },
+  {
+    image: "/assets/Carousel/0.jpeg",
+  },
+  {
+    image: "/assets/Carousel/00.jpeg",
+  },
+  {
+    image: "/assets/Carousel/1.jpeg",
+  },
+  {
+    image: "/assets/Carousel/2.jpeg",
+  },
+  {
+    image: "/assets/Carousel/03.jpeg",
+  },
+];

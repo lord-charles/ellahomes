@@ -2,7 +2,7 @@ import './globals.css';
 import Navbar from './components/Navbar/index';
 import { Footer } from "./components";
 import ScrollToTop from "./components/scroll-to-top/index";
-
+import { Providers } from "./providers";
 export const metadata = {
   title: "Ella Homes",
   description:
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="w-screen overflow-x-hidden">
         <Navbar />
-        {children}
+        <Providers>{children}</Providers>
         <ScrollToTop />
 
         <Footer />

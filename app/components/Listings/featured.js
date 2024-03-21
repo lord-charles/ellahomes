@@ -7,13 +7,13 @@ import { StarIcon } from "@heroicons/react/24/solid";
 import Lottie from "lottie-react";
 import slideanimation from "../../../public/slide.json";
 import { Divider } from "@mui/material";
-import { FeaturedData } from "@/utils/data";
 // CAROUSEL DATA
 
 // CAROUSEL SETTINGS
 
 export default class MultipleItems extends Component {
   render() {
+    const { featuredData } = this.props;
     const settings = {
       dots: false,
       infinite: true,
@@ -45,58 +45,14 @@ export default class MultipleItems extends Component {
         },
       ],
     };
-
+    // console.log(featuredData);
     return (
       <div id="featured listings">
         <div className="mx-auto max-w-6xl sm:py-8 px-4 lg:px-8  relative">
-          <div className="flex items-center justify-between pt-0 lg:pt-0 space-x-5 lg:mx-[200px] md:mx-[200px] xxxs:mx-[15px] pb-10">
-            <div className="flex gap-2">
-              <Image
-                src="/assets/banner/check-circle.svg"
-                alt="check-image"
-                width={30}
-                height={30}
-                className="smallImage"
-              />
-              <p className="text-sm sm:text-lg font-semibold text-black text-center">
-                Vacation Ready
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <Image
-                src="/assets/banner/check-circle.svg"
-                alt="check-image"
-                width={30}
-                height={30}
-                className="smallImage"
-              />
-              <p className="text-sm sm:text-lg font-semibold text-black text-center">
-                Memorable Stays
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <Image
-                src="/assets/banner/check-circle.svg"
-                alt="check-image"
-                width={30}
-                height={30}
-                className="smallImage"
-              />
-              <p className="text-sm sm:text-lg font-semibold text-black text-center">
-                Prime Locations
-              </p>
-            </div>
-          </div>
-          <div className="sm:flex justify-between items-center ">
+          <div className="sm:flex mt-10 ">
             <h3 className="text-midnightblue text-2xl lg:text-[25px] font-semibold mb-0 xxxs:text-[20px]">
               FEATURED LISTING
             </h3>
-            <Link
-              href={"/featured"}
-              className="text-Blueviolet text-[16px] font-medium space-links"
-            >
-              View more&nbsp;&gt;&nbsp;
-            </Link>
           </div>
           <div className="absolute xxxs:left-[40%] lg:left-[50%] lg:bottom-10 xxxs:bottom-0  z-[9999]">
             <div className="flex items-center space-x-2">
@@ -114,19 +70,19 @@ export default class MultipleItems extends Component {
           </div>
 
           <Slider {...settings}>
-            {FeaturedData.map((items, i) => (
+            {featuredData.map((items, i) => (
               <div key={i}>
-                <div className="bg-white m-3 px-0  pb-12 my-10 shadow-courses rounded-2xl">
+                <div className="bg-white m-3 px-0  pb-12 my-10 shadow-lg rounded-2xl">
                   <div className="relative rounded-3xl">
                     <Image
-                      src={items.images[0]}
+                      src={items?.detailImage}
                       alt="gaby"
                       width={389}
                       height={262}
                       className="m-auto object-cover h-[270px] w-full rounded-sm clipPath"
                     />
                     <div className="bg-orange-300 absolute rounded-full top-2 left-2">
-                      <h2 className="px-3 py-1">{items.type}</h2>
+                      <h2 className="px-3 py-1">{items?.propertyType}</h2>
                     </div>
                     <div className="absolute right-5 -bottom-2 bg-Blueviolet rounded-full p-4 cursor-pointer">
                       <h3 className="text-white uppercase text-center text-sm font-medium">
@@ -142,12 +98,12 @@ export default class MultipleItems extends Component {
 
                   <div className="px-3">
                     <h4 className="text-xl font-bold pt-6 text-black">
-                      {items.heading1}
+                      {items?.title}
                     </h4>
 
                     <div>
                       <h3 className="text-base font-normal pt-3 opacity-75">
-                        {items.heading2}
+                        {items?.location?.name}
                       </h3>
                     </div>
 
@@ -165,7 +121,9 @@ export default class MultipleItems extends Component {
                         </div>
                       </div>
                       <div>
-                        <h3 className="text-2xl font-medium">{items.price}</h3>
+                        <h3 className="text-2xl font-medium">
+                          Ksh{items.price?.toLocaleString()}
+                        </h3>
                       </div>
                     </div>
 
@@ -173,27 +131,27 @@ export default class MultipleItems extends Component {
 
                     <div className="flex justify-between pt-6 border p-2 items-center h-[55px] overflow-hidden">
                       <div className="text-gray-500 relative top-[-4px] text-[15px] text-center">
-                        {items.beds > 1
-                          ? `${items.beds} Beds`
-                          : items.beds === 1
-                          ? `${items.beds} Bed`
-                          : items.beds}
+                        {items?.category[0].beds > 1
+                          ? `${items?.category[0].beds} Beds`
+                          : items?.category[0].beds === 1
+                          ? `${items?.category[0].beds} Bed`
+                          : items?.category[0].beds}
                       </div>
                       <Divider className="h-[70px] w-[1px] " />
                       <div className="text-gray-500 relative top-[-4px] text-[15px] text-center">
-                        {items.sf}SF
+                        {items?.category[0].sf}SF
                       </div>
                       <Divider className="h-[70px] w-[1px] " />
                       <div className="text-gray-500 relative top-[-4px] text-[15px] text-center">
-                        {items.bath > 1
-                          ? `${items.bath} bath`
-                          : items.bath === 1
-                          ? `${items.bath} bath`
+                        {items?.category[0].bath > 1
+                          ? `${items?.category[0].bath} baths`
+                          : items?.category[0].bath === 1
+                          ? `${items?.category[0].bath} bath`
                           : null}
                       </div>
                       <Divider className="h-[70px] w-[1px] " />
                       <Link
-                        href={`/listing/${items.id}`}
+                        href={`/listing/${items._id}`}
                         className="relative top-[-8px]"
                       >
                         <button className=" h-[40px] cursor-pointer bg-Blueviolet  hover:bg-semiblueviolet  hover:text-white text-Blueviolet font-medium px-1 rounded-full">
