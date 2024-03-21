@@ -5,8 +5,6 @@ import AirbnbListingItem from "../components/Listings/ListingItemairbnb";
 import { ForRent, ForSale, RecentOffers, AirbnbsData } from "../../utils/data";
 
 const Airbnbs = () => {
-  const [data, setdata] = useState([...RecentOffers, ...ForSale, ...ForRent]);
-
   return (
     <main className="flex flex-col flex-1">
       <div className="pb-0">
@@ -24,7 +22,7 @@ const Airbnbs = () => {
         <section className="py-10 relative mt-[25vh] ">
           <div className="relative max-w-6xl pt-16 pb-1 mt-[100px] mx-auto md:pt-20 flex justify-center">
             <h1 className="text-3xl leading-10 text-white  text-center uppercase font-heading font-semibold bg-black w-fit p-1 rounded-md">
-              Airbnbs
+              AirBnbs
             </h1>
           </div>
           <div className="relative max-w-6xl mx-auto">
