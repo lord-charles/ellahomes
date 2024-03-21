@@ -21,7 +21,7 @@ export default function HomeListings({ airbBnbs }) {
           <div className="m-2 mb-10">
             <div className="sm:flex justify-between items-center pb-4">
               <h3 className="text-midnightblue text-2xl lg:text-[25px] font-semibold mb-0 xxxs:text-[20px]">
-                AirbBnbs
+                AirBnbs
               </h3>
             </div>
             <ul className="grid xxxs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
