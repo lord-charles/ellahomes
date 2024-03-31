@@ -246,10 +246,10 @@ const FAQ = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    a. Pay for an early morning - Pay full amount of one night's
-                    stay. This implies that we will not accept any bookings for
-                    the previous night and you are guaranteed an early morning
-                    check-in.
+                    a. Pay for an early morning - Pay full amount of one
+                    night&apos;s stay. This implies that we will not accept any
+                    bookings for the previous night and you are guaranteed an
+                    early morning check-in.
                     <br />
                     <br />
                     b. Subject to availability (leave it to chance) - If we do
@@ -268,7 +268,7 @@ const FAQ = () => {
             {/* footer */}
             <div class="pt-20 mt-20 border-t">
               <h2 class="text-2xl leading-10 text-center uppercase font-heading">
-                Can’t find what you are looking for?
+                Can&apos;t find what you are looking for?
               </h2>
               <div class="flex flex-col items-center justify-center mt-6 space-y-3 md:space-y-0 md:space-x-3 md:flex-row">
                 <button class="px-8 py-4 font-medium bg-white border-2 rounded-full text-lime-500 focus:outline-none border-lime-500">
