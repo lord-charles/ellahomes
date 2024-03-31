@@ -17,7 +17,7 @@ const Blog = () => {
   return (
     <main className="flex flex-col flex-1">
       <div className="pb-0">
-        <div className="absolute xxxs:top-[25vh] lg:top-[25vh] z-[1]">
+        {/* <div className="absolute xxxs:top-[26vh] lg:top-[29vh] z-[1]">
           <Image
             src="/banners/bg3.jpeg"
             width={3000}
@@ -25,9 +25,9 @@ const Blog = () => {
             alt="bg"
             className="object-cover w-screen lg:h-[27rem] md:h-[27rem] xxxs:h-[25rem] blur-[0px]"
           />
-        </div>
-        <div className="px-6 py-16 mt-[340px]">
-          <div className="relative max-w-6xl pt-16 pb-10 mx-auto md:pt-20">
+        </div> */}
+        <div className="px-6 py-16 mt-[1px]">
+          <div className="relative max-w-6xl  pb-10 mx-auto ">
             <h1 className="text-3xl leading-10 text-center uppercase font-heading font-semibold">
               Our Blog
             </h1>

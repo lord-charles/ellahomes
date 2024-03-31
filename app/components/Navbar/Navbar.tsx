@@ -88,56 +88,6 @@ py-3 text-[13px]"
                           </a>
                         )}
                       </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                            onClick={() => setLanguage("Kiswahili")}
-                          >
-                            Kiswahili
-                          </a>
-                        )}
-                      </Menu.Item>
-                    </div>
-                    <div className="py-1">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                            onClick={() => setLanguage("Spanish")}
-                          >
-                            Spanish
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                            onClick={() => setLanguage("French")}
-                          >
-                            French
-                          </a>
-                        )}
-                      </Menu.Item>
                     </div>
                   </Menu.Items>
                 </Transition>
@@ -166,7 +116,7 @@ py-3 text-[13px]"
                   leaveFrom="transform opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
-                  <Menu.Items className="absolute right-0 mt-2 w-36 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[999]">
+                  <Menu.Items className="absolute right-0 mt-6 w-26 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[999]">
                     <div className="py-1">
                       <Menu.Item>
                         {({ active }) => (
@@ -181,56 +131,6 @@ py-3 text-[13px]"
                             onClick={() => setCurrency("KSH")}
                           >
                             KHS
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                            onClick={() => setCurrency("USD")}
-                          >
-                            USD
-                          </a>
-                        )}
-                      </Menu.Item>
-                    </div>
-                    <div className="py-1">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                            onClick={() => setCurrency("USDT")}
-                          >
-                            USDT
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                            onClick={() => setCurrency("EURO")}
-                          >
-                            EURO
                           </a>
                         )}
                       </Menu.Item>
@@ -273,7 +173,7 @@ py-3 text-[13px]"
             </div>
 
             <div className="flex space-x-10 items-center xxxs:hidden md:flex">
-              <Link href="/Agents" className="flex flex-col items-center">
+              {/* <Link href="/Agents" className="flex flex-col items-center">
                 <Image
                   width={300}
                   height={200}
@@ -282,7 +182,7 @@ py-3 text-[13px]"
                   className="w-[50px] h-[50px] object-contain"
                 />
                 <h2 className="text-white">Agents</h2>
-              </Link>
+              </Link> */}
 
               <Link href="/faq" className="flex flex-col items-center">
                 <Image
@@ -355,37 +255,7 @@ py-3 text-[13px]"
                               "block px-4 py-2 text-sm"
                             )}
                           >
-                            Apartment
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                            Studio
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                            Villa
+                            AirBnb
                           </a>
                         )}
                       </Menu.Item>

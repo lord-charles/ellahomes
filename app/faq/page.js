@@ -55,23 +55,12 @@ const FAQ = () => {
   return (
     <main className="flex flex-col flex-1">
       <div>
-        <div className="absolute xxxs:top-[25vh] lg:top-[25vh] z-[1]">
-          <Image
-            src="/banners/bg4.jpeg"
-            width={3000}
-            height={3000}
-            alt="bg"
-            className="object-cover w-screen lg:h-[27rem] md:h-[27rem] xxxs:h-[25rem] blur-[0px]"
-          />
-        </div>
-        <div className="px-6 py-10 mt-[340px]">
-          <div className="relative max-w-6xl pt-16 pb-10 mx-auto md:pt-20">
-            <h1 className=" font-semibold text-3xl leading-10 text-center uppercase font-heading">
-              Frequently Asked Questions
-            </h1>
-          </div>
+        <div className="px-6 pt-10">
+          <h1 className=" font-semibold text-3xl leading-10 text-center uppercase font-heading">
+            Frequently Asked Questions
+          </h1>
           <div class="max-w-2xl mx-auto mt-7">
-            <form class="flex w-full shadow-2xl">
+            {/* <form class="flex w-full shadow-2xl">
               <input
                 type="text"
                 class="outline-none w-full px-3 py-4 text-sm font-medium border-gray-200 rounded-l md:px-7 focus:ring-0 focus:border-gray-200"
@@ -83,9 +72,8 @@ const FAQ = () => {
               >
                 Search
               </button>
-            </form>
-
-            {/* qas */}
+            </form> */}
+            {/* FAQs */}
             <div className="mt-[35px]">
               <Accordion
                 expanded={expanded === "panel1"}
@@ -95,22 +83,13 @@ const FAQ = () => {
                   aria-controls="panel1d-content"
                   id="panel1d-header"
                 >
-                  <Typography>
-                    How do I start the home buying process?
-                  </Typography>
+                  <Typography>Where are you located?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <ol className="custom-list ml-10">
-                    <li>Determine your budget.</li>
-                    <li>Get pre-approved for a mortgage.</li>
-                    <li>Research neighborhoods and property types.</li>
-                    <li>Work with a real estate agent.</li>
-                    <li>Visit homes, make an offer, and negotiate terms.</li>
-                    <li>Complete inspections and finalize financing.</li>
-                    <li>
-                      Close the deal and take possession of your new home.
-                    </li>
-                  </ol>
+                  <Typography>
+                    Our apartments are all in Nyali. We offer properties in
+                    various locations within Nyali.
+                  </Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion
@@ -121,36 +100,15 @@ const FAQ = () => {
                   aria-controls="panel2d-content"
                   id="panel2d-header"
                 >
-                  <Typography>
-                    What should I consider when selling my home?
-                  </Typography>
+                  <Typography>Do you offer breakfast?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <ol className="custom-list ml-10">
-                    <li>
-                      Pricing: Set the right price based on market conditions
-                      and property value.
-                    </li>
-                    <li>
-                      Home Preparation: Make necessary repairs and stage your
-                      home for showings.
-                    </li>
-                    <li>
-                      Marketing: Promote your property through online listings,
-                      social media, and signage.
-                    </li>
-                    <li>
-                      Showings: Accommodate potential buyers for property
-                      viewings.
-                    </li>
-                    <li>
-                      Negotiations: Be open to negotiating offers and terms.
-                    </li>
-                    <li>
-                      Closing: Prepare for the closing process and transferring
-                      ownership.
-                    </li>
-                  </ol>
+                  <Typography>
+                    No, but our houses are equipped with fully furnished
+                    kitchens/kitchenettes, and there are shopping centers within
+                    walking distance. Additionally, there are several good
+                    restaurants in the vicinity.
+                  </Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion
@@ -162,29 +120,14 @@ const FAQ = () => {
                   id="panel3d-header"
                 >
                   <Typography>
-                    What is a mortgage and how does it work?
+                    Can I have an early check-in/late check-out?
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <ol className="custom-list ml-10">
-                    <li>You apply for a mortgage with a lender.</li>
-                    <li>
-                      The lender assesses your credit, income, and financial
-                      history.
-                    </li>
-                    <li>
-                      If approved, you receive a loan for a specific amount.
-                    </li>
-                    <li>
-                      You make regular payments, including interest and
-                      principal.
-                    </li>
-                    <li>Over time, you build equity in your home.</li>
-                    <li>
-                      If you default on payments, the lender may foreclose on
-                      the property.
-                    </li>
-                  </ol>
+                  <Typography>
+                    Yes, we provide early check-in and late check-out options,
+                    subject to availability.
+                  </Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion
@@ -192,29 +135,13 @@ const FAQ = () => {
                 onChange={handleChange("panel4")}
               >
                 <AccordionSummary
-                  aria-controls="panel3d-content"
-                  id="panel3d-header"
+                  aria-controls="panel4d-content"
+                  id="panel4d-header"
                 >
-                  <Typography>
-                    What is a real estate agent&apos;s role in buying/selling a
-                    home?
-                  </Typography>
+                  <Typography>Do you allow pets?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <ol className="custom-list ml-10">
-                    <li>
-                      For Buyers: They find suitable properties, negotiate
-                      offers, and guide you through the purchase process.
-                    </li>
-                    <li>
-                      For Sellers: They market your property, find qualified
-                      buyers, and negotiate the best deal.
-                    </li>
-                    <li>
-                      They provide expertise on market trends, pricing, and
-                      legal aspects.
-                    </li>
-                  </ol>
+                  <Typography>Yes, we allow pets only in the villa.</Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion
@@ -222,31 +149,118 @@ const FAQ = () => {
                 onChange={handleChange("panel5")}
               >
                 <AccordionSummary
-                  aria-controls="panel3d-content"
-                  id="panel3d-header"
+                  aria-controls="panel5d-content"
+                  id="panel5d-header"
                 >
                   <Typography>
-                    What is a home inspection, and is it necessary?
+                    Do you offer shuttle or airport pick-up and drop?
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <ol className="custom-list ml-10">
-                    <li>
-                      A home inspection is a thorough evaluation of a
-                      property&apos;s condition. It&apos;s essential because:
-                    </li>
-                    <li>
-                      It identifies hidden issues, helping buyers make informed
-                      decisions.
-                    </li>
-                    <li>
-                      It can uncover safety concerns or necessary repairs.
-                    </li>
-                    <li>
-                      It can be used to negotiate repairs or price adjustments.
-                    </li>
-                    <li>Lenders may require it for mortgage approval.</li>
-                  </ol>
+                  <Typography>
+                    At the moment, we do not offer shuttle or airport pick-up
+                    and drop-off services. However, we can recommend reliable
+                    transfer services.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                expanded={expanded === "panel6"}
+                onChange={handleChange("panel6")}
+              >
+                <AccordionSummary
+                  aria-controls="panel6d-content"
+                  id="panel6d-header"
+                >
+                  <Typography>
+                    Are there rooms with wheelchair access?
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Yes, most of our houses are wheelchair-friendly, and some
+                    also have lifts for easy access to the top-floor houses.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                expanded={expanded === "panel7"}
+                onChange={handleChange("panel7")}
+              >
+                <AccordionSummary
+                  aria-controls="panel7d-content"
+                  id="panel7d-header"
+                >
+                  <Typography>Can you recommend nearby restaurants?</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Some nearby restaurants we recommend are Maasai Beach,
+                    Charchoma, and Jumeirah Beachfront.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                expanded={expanded === "panel8"}
+                onChange={handleChange("panel8")}
+              >
+                <AccordionSummary
+                  aria-controls="panel8d-content"
+                  id="panel8d-header"
+                >
+                  <Typography>Do you offer extra bedding?</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Yes, we provide extra bedding upon request at an additional
+                    fee.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                expanded={expanded === "panel9"}
+                onChange={handleChange("panel9")}
+              >
+                <AccordionSummary
+                  aria-controls="panel9d-content"
+                  id="panel9d-header"
+                >
+                  <Typography>Do you have a chef?</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    We do not have an in-house chef, but we can recommend
+                    external catering services.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                expanded={expanded === "panel10"}
+                onChange={handleChange("panel10")}
+              >
+                <AccordionSummary
+                  aria-controls="panel10d-content"
+                  id="panel10d-header"
+                >
+                  <Typography>Early Morning Check-in Options</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    a. Pay for an early morning - Pay full amount of one night's
+                    stay. This implies that we will not accept any bookings for
+                    the previous night and you are guaranteed an early morning
+                    check-in.
+                    <br />
+                    <br />
+                    b. Subject to availability (leave it to chance) - If we do
+                    not have an in-house guest, you can check-in early in the
+                    morning. Alternatively, if we do have an in-house guest,
+                    your check-in will be at the standard time; 12:00 noon.
+                    <br />
+                    <br />
+                    *Kindly note: This option is not applicable during the peak
+                    season (18th December - 5th January) & any public holiday.
+                  </Typography>
                 </AccordionDetails>
               </Accordion>
             </div>

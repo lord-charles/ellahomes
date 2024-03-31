@@ -5,21 +5,10 @@ const Contact = () => {
   return (
     <main className="flex flex-col flex-1">
       <div className="pb-0">
-        <div className="absolute xxxs:top-[25vh] lg:top-[25vh] ">
-          <Image
-            src="/banners/bg4.jpeg"
-            width={3000}
-            height={3000}
-            alt="bg"
-            className="object-cover w-screen lg:h-[27rem] md:h-[27rem] xxxs:h-[25rem] blur-[0px]"
-          />
-        </div>
-        <div className="px-6 py-12 mt-[340px]">
-          <div className="relative max-w-6xl pt-16 pb-10 mx-auto md:pt-20">
-            <h1 className=" font-semibold text-3xl leading-10 text-center uppercase font-heading">
-              Contact Us
-            </h1>
-          </div>
+        <div className="px-6 pt-10">
+          <h1 className=" font-semibold text-3xl leading-10 text-center uppercase font-heading">
+            Contact Us
+          </h1>
 
           <div className="max-w-6xl mx-auto">
             <div className="mt-6 space-y-5 md:flex md:items-center md:space-y-0 md:space-x-5">
@@ -132,14 +121,14 @@ const Contact = () => {
                     placeholder="Phone*"
                     name="phone"
                   />
-                  <select
+                  {/* <select
                     id="type"
                     className="px-1 outline-none border p-2 border-b focus:ring-0 border-gray-300 focus:border-green-500 rounded-md"
                     name="type"
                   >
                     <option>Buy</option>
                     <option>Sell</option>
-                  </select>
+                  </select> */}
                   <textarea
                     className="h-44 px-1 outline-none border rounded-md border-gray-300 md:col-span-2 focus:ring-0  focus:border "
                     placeholder="Message*"

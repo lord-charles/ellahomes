@@ -4,8 +4,6 @@ import React, { Component } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/24/solid";
-import Lottie from "lottie-react";
-import slideanimation from "../../../public/slide.json";
 import { Divider } from "@mui/material";
 // CAROUSEL DATA
 
@@ -54,7 +52,7 @@ export default class MultipleItems extends Component {
               FEATURED LISTING
             </h3>
           </div>
-          <div className="absolute xxxs:left-[40%] lg:left-[50%] lg:bottom-10 xxxs:bottom-0  z-[9999]">
+          {/* <div className="absolute xxxs:left-[40%] lg:left-[50%] lg:bottom-10 xxxs:bottom-0  z-[9999]">
             <div className="flex items-center space-x-2">
               <Lottie
                 animationData={slideanimation}
@@ -67,7 +65,7 @@ export default class MultipleItems extends Component {
                 slide...
               </h2>
             </div>
-          </div>
+          </div> */}
 
           <Slider {...settings}>
             {featuredData.map((items, i) => (

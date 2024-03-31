@@ -17,6 +17,8 @@ export default function Home() {
   const [featuredData, setFeaturedData] = useState([]);
   const [airbBnbs, setAirbBnbs] = useState([]);
 
+  console.log(airbBnbs);
+
   const fetchFeaturedListings = async () => {
     try {
       const res = await axios.get(`${base_url}products?isFeatured=true`);

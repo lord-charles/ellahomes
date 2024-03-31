@@ -43,9 +43,7 @@ const Footer = () => {
                       <Link className="text-gray-300" href="/about">
                         About us
                       </Link>
-                      <Link className="text-gray-300" href="/listing">
-                        Listing
-                      </Link>
+
                       <Link className="text-gray-300" href="/faq">
                         FAQ
                       </Link>
@@ -83,21 +81,7 @@ const Footer = () => {
             <div className="pt-8 mt-8 border-t border-gray-700 md:flex md:items-center md:justify-between ">
               <div className="flex space-x-6 md:order-2 xxxs:justify-center">
                 <a
-                  href="https://youtube.com/"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-gray-400 hover:text-gray-300"
-                >
-                  <span className="sr-only">YouTube</span>
-                  <Image
-                    src={"/icons/youtube-icon.png"}
-                    alt="icon"
-                    width={25}
-                    height={25}
-                  />
-                </a>
-                <a
-                  href="https://facebook.com/"
+                  href="https://www.facebook.com/profile.php?id=100063639368925&mibextid=ZbWKwL"
                   target="_blank"
                   rel="noopener"
                   className="text-gray-400 hover:text-gray-300"
@@ -117,7 +101,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://instagram.com/"
+                  href="https://www.instagram.com/ellahomes_?utm_source=qr&igsh=cTE3ZTFsejhsN2lj"
                   target="_blank"
                   rel="noopener"
                   className="text-gray-400 hover:text-gray-300"
@@ -137,6 +121,20 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
+                  href="https://vm.tiktok.com/ZMMkWBf2D/"
+                  target="_blank"
+                  rel="noopener"
+                  className="text-gray-400 hover:text-gray-300"
+                >
+                  <span className="sr-only">TikTok</span>
+                  <Image
+                    src={"/icons/tiktok-icon.png"}
+                    alt="icon"
+                    width={25}
+                    height={25}
+                  />
+                </a>
+                <a
                   href="https://twitter.com/"
                   target="_blank"
                   rel="noopener"
@@ -153,14 +151,14 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://github.com/"
+                  href="https://youtube.com/"
                   target="_blank"
                   rel="noopener"
                   className="text-gray-400 hover:text-gray-300"
                 >
-                  <span className="sr-only">TikTok</span>
+                  <span className="sr-only">YouTube</span>
                   <Image
-                    src={"/icons/tiktok-icon.png"}
+                    src={"/icons/youtube-icon.png"}
                     alt="icon"
                     width={25}
                     height={25}

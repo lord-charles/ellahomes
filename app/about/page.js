@@ -5,21 +5,10 @@ const About = () => {
   return (
     <main className="flex flex-col flex-1">
       <div>
-        <div className="absolute top-[25vh] z-[1]">
-          <Image
-            src="/banners/bg4.jpeg"
-            width={3000}
-            height={3000}
-            alt="bg"
-            className="object-cover w-screen lg:h-[27rem] md:h-[27rem] xxxs:h-[25rem] blur-[0px]"
-          />
-        </div>
-        <div className="px-6 py-12 mt-[340px]">
-          <div className="relative max-w-6xl pt-16 pb-10 mx-auto md:pt-20">
-            <h1 className=" font-semibold text-3xl leading-10 text-center uppercase font-heading">
-              About Us
-            </h1>
-          </div>
+        <div className="px-6 pt-10">
+          <h1 className=" font-semibold text-3xl leading-10 text-center uppercase font-heading">
+            About Us
+          </h1>
 
           <div className="max-w-6xl mx-auto ">
             <div>
@@ -163,23 +152,6 @@ const About = () => {
                   else that comes with the selling of a property.
                 </p>
               </div>
-            </div>
-
-            <div className="relative max-w-6xl pt-16 pb-10 mx-auto md:pt-20">
-              <h1 className=" font-semibold text-3xl leading-10 text-center uppercase font-heading">
-                Our Services
-              </h1>
-            </div>
-            <div className="justify-center flex">
-              <ol className="custom-list ml-10 text-[17px]">
-                <li>Real estate marketing</li>
-                <li>Consultancy Services</li>
-                <li>Property Management</li>
-                <li>House Hunting</li>
-                <li>Furnished homes Management</li>
-                <li>Sale of property</li>
-                <li>Real Estate</li>
-              </ol>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function airbBnbItem({ airbBnb }) {
           loading="lazy"
           width={400}
           height={400}
-          src={airbBnb?.images[0]?.url}
+          src={airbBnb?.detailImage}
           alt="image"
         />
         <Moment

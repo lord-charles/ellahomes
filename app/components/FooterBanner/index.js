@@ -27,7 +27,7 @@ const Index = () => {
           <div className="flex flex-col items-center justify-center w-full lg:ml-20">
             <div className="max-w-sm pt-20 pb-10 text-center text-white lg:pt-10">
               <h3 className="text-4xl font-medium uppercase">
-                3-BEDROOM HIDDEN ROOF BUNGALOW
+                STAND ALONE VILLA
                 <br />
                 <a className="text-center text-white  text-[17px] font-normal">
                   Nyali, Mombasa
