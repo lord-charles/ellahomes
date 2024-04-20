@@ -51,7 +51,8 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^9.1.1",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/react-slick": "^0.23.10"

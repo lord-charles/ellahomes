@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/index';
 import { Footer } from "./components";
 import ScrollToTop from "./components/scroll-to-top/index";
 import { Providers } from "./providers";
+import TidioChat from "./Tindio";
 export const metadata = {
   title: "Ella Homes",
   description:
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Navbar />
         <Providers>{children}</Providers>
         <ScrollToTop />
+        <TidioChat />
 
         <Footer />
       </body>
