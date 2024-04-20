@@ -17,7 +17,6 @@ export default function Home() {
   const [featuredData, setFeaturedData] = useState([]);
   const [airbBnbs, setAirbBnbs] = useState([]);
 
-  console.log(airbBnbs);
 
   const fetchFeaturedListings = async () => {
     try {

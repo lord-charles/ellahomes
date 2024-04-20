@@ -38,7 +38,7 @@ const Banner = () => {
           <div className="grid grid-cols-2 md:gap-2 xxxs:gap-1 xl:w-[48%]">
             <div>
               <Image
-                src="/assets/banner/5432848.jpg"
+                src="/assets/Carousel/5.jpeg"
                 height={600}
                 width={600}
                 className="lg:w-[270px] xxxs:w-[250px] md:w-[430px] md:h-[200px] xxxs:h-[150px]  object-cover rounded-md"
@@ -47,7 +47,7 @@ const Banner = () => {
             </div>
             <div>
               <Image
-                src="/assets/banner/5432929.jpg"
+                src="/assets/Carousel/0.jpeg"
                 height={600}
                 width={600}
                 className="lg:w-[270px] xxxs:w-[250px] md:w-[430px] md:h-[200px] xxxs:h-[150px]  object-cover rounded-md"
@@ -56,7 +56,7 @@ const Banner = () => {
             </div>
             <div>
               <Image
-                src="/assets/banner/6165194.jpg"
+                src="/assets/Carousel/1.jpeg"
                 height={600}
                 width={600}
                 className="lg:w-[270px] xxxs:w-[250px] md:w-[430px] md:h-[200px] xxxs:h-[150px]  object-cover rounded-md"
@@ -65,7 +65,7 @@ const Banner = () => {
             </div>
             <div>
               <Image
-                src="/assets/banner/5432848.jpg"
+                src="/assets/Carousel/3.jpeg"
                 height={600}
                 width={600}
                 className="lg:w-[270px] xxxs:w-[250px] md:w-[430px] md:h-[200px] xxxs:h-[150px]  object-cover rounded-md"
