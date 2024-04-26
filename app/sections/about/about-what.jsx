@@ -44,7 +44,7 @@ export default function AboutWhat() {
     <Container
       component={MotionViewport}
       sx={{
-        py: { xs: 10, md: 15 },
+        pt: { xs: 10, md: 15 },
         textAlign: { xs: "center", md: "unset" },
       }}
     >
