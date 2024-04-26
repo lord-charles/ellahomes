@@ -5,16 +5,16 @@ import toast from "react-hot-toast";
 
 const Footer = () => {
   return (
-    <div className="mt-[140px]">
+    <div className="mt-[0px]">
       <footer className="relative">
-        <div className="absolute inset-0 h-20 bg-bottom bg-no-repeat bg-cover -top-20">
+        {/* <div className="absolute inset-0 h-20 bg-bottom bg-no-repeat bg-cover -top-20">
           <Image
             src="/assets/listings/building_trees.png"
             alt=""
             layout="fill"
             objectFit="cover"
           />
-        </div>
+        </div> */}
         <div className="px-6 pt-24 bg-gray-800">
           <div className="max-w-6xl mx-auto">
             <div className="space-y-8 md:flex md:space-y-0">
