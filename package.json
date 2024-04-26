@@ -30,7 +30,7 @@
     "axios": "^1.6.7",
     "eslint": "8.40.0",
     "eslint-config-next": "^13.5.4",
-    "framer-motion": "^11.0.18",
+    "framer-motion": "^10.16.4",
     "js-cookie": "^3.0.1",
     "lottie-react": "^2.4.0",
     "mdi-material-ui": "^7.7.0",

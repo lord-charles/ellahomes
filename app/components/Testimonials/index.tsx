@@ -15,39 +15,40 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    name: "Sarah Smith",
-    profession: "Satisfied Renter",
+    name: "Eva",
+    profession: "2 years on Airbnb",
     comment:
-      "I've rented from Ella Homes for the past three years. They have a wide range of rental properties to choose from, and their service is top-notch. I highly recommend them to anyone in search of a comfortable and well-maintained place to live",
-    imgSrc: "/assets/testimonial/user.svg",
+      "Betty is was very friendly and helped us with all our questions also she even let us check out later, which was very kind.The location is very good, the sea is just across the street and there is also an supermarket very close.",
+    imgSrc: "/assets/testimonial/eva.webp",
+  },
+
+  {
+    name: "FaberCollins",
+    profession: "Johannesburg, South Africa",
+    comment:
+      "The apartment was great, spacious and in a good location. Access was easy and space for parking was provided. We just had some small issues, which Betty immediately attended to, so we really enjoyed our stay.",
+    imgSrc: "/assets/testimonial/FaberCollins.webp",
   },
   {
-    name: "Linda Parker",
-    profession: "Happy Homeowner",
+    name: "With",
+    profession: "United Kingdom",
     comment:
-      "Buying our dream home through Ella Homes was a breeze. Their team was incredibly helpful throughout the entire process, from property selection to closing the deal. We couldn't be happier with our new home!",
-    imgSrc: "/assets/mentor/user2.png",
+      "I had an amazing stay at this charming B&B! The host was incredibly friendly and welcoming, making me feel right at home. The place was spotlessly clean, and the cozy atmosphere added to the overall experience. ",
+    imgSrc: "/assets/testimonial/with.webp",
   },
   {
-    name: "Leslie Alexander",
-    profession: "CEO, Parkview Int.Ltd",
+    name: "Kari",
+    profession: "Davis, California",
     comment:
-      "Living in a Ella Homes apartment has been a pleasure. The amenities are great, and the location is convenient. The management is responsive to any concerns, making it a worry-free living experience.",
-    imgSrc: "/assets/mentor/user3.png",
+      "Betty's place was fantastic. The rooms were spotless & cute. The air conditioners were great - really helped us sleep well in steamy Mombasa. Betty was so nice. She checked on us & let us leave luggage so we didn't have to carry it around.",
+    imgSrc: "/assets/testimonial/kari.webp",
   },
   {
-    name: "Robert Fox",
-    profession: "Vacation Renter",
+    name: "Otto Bryne",
+    profession: "Bamako, Mali",
     comment:
-      "My family and I had an amazing vacation thanks to Ella Homes. We rented a beautiful vacation property through them, and it exceeded our expectations. The property was clean, well-equipped, and in a perfect location for our getaway.",
-    imgSrc: "/assets/mentor/user1.png",
-  },
-  {
-    name: "Leslie Alexander",
-    profession: "Repeat Customer",
-    comment:
-      "I keep coming back to Ella Homes because of their consistency in providing quality properties. Whether it's for a rental, an apartment, or a property purchase, I know I can count on them to meet my housing needs.",
-    imgSrc: "/assets/mentor/user2.png",
+      "Great Accommodation and Host. Neat apartment and well situated.Will recommend to anyone traveling to Mombasa",
+    imgSrc: "/assets/testimonial/OttoBryne.webp",
   },
 ];
 
@@ -116,12 +117,12 @@ export default class MultipleItems extends Component {
                     <Image
                       src={items.imgSrc}
                       alt={items.imgSrc}
-                      width={100}
-                      height={100}
-                      className="inline-block"
+                      width={80}
+                      height={80}
+                      className="inline-block rounded-full"
                     />
                   </div>
-                  <h4 className="text-base font-normal text-darkgray my-4">
+                  <h4 className="text-[14px] font-normal text-darkgray my-4">
                     {items.comment}
                   </h4>
                   <hr style={{ color: "#D7D5D5" }} />

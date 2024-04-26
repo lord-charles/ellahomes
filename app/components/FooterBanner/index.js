@@ -3,7 +3,7 @@ import React from "react";
 
 const Index = () => {
   return (
-    <section className="bg-cyan-600 mb-10">
+    <section className="bg-cyan-600 mb-20">
       <div className="px-6">
         <div className="max-w-6xl py-10 mx-auto lg:py-0 lg:flex">
           <div className="relative flex items-center justify-center flex-shrink-0 lg:w-[30rem] h-96">

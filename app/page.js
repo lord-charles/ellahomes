@@ -6,17 +6,17 @@ import Mentor from "./components/Mentor/index";
 import Testimonials from "./components/Testimonials/index";
 import Newsletter from "./components/Newsletter/Newsletter";
 import HomeListings from "./components/Home/index";
-import { Looking, FooterBanner } from "./components/";
+import { Looking, FooterBanner } from "./components";
 import { Toaster } from "react-hot-toast";
 import { base_url } from "../utils/baseUrl";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import SkeletonCard from "./ui/SkeletonCard";
+import ScrollProgress from "./components/scroll-progress";
 
 export default function Home() {
   const [featuredData, setFeaturedData] = useState([]);
   const [airbBnbs, setAirbBnbs] = useState([]);
-
 
   const fetchFeaturedListings = async () => {
     try {
@@ -45,6 +45,7 @@ export default function Home() {
   return (
     <main>
       <Toaster />
+
       <Banner />
       {featuredData.length > 0 ? (
         <Listings featuredData={featuredData} />
