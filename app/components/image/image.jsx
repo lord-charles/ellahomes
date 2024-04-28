@@ -9,7 +9,8 @@ import { getRatio } from "./utils";
 
 // ----------------------------------------------------------------------
 
-const Image = forwardRef(
+// eslint-disable-next-line react/display-name
+const Image = (
   (
     {
       ratio,
