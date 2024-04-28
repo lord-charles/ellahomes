@@ -1,15 +1,19 @@
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import Link from 'next/link';
-import React, { Fragment, useState } from 'react';
-import { Bars3Icon, ChevronDownIcon } from '@heroicons/react/24/outline';
+"use client";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import Link from "next/link";
+import React, { Fragment, useEffect, useState } from "react";
+import { Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Image from "next/image";
 import { IconButton } from "@mui/material";
 import MyDropdown from "./Menu";
+import { jwtDecode } from "jwt-decode";
+import Cookies from "js-cookie";
 
 import Divider from "@mui/material/Divider";
-
+import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
 interface NavigationItem {
   name: string;
   href: string;
@@ -18,6 +22,10 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", current: true },
 ];
+type JwtPayload = {
+  firstname?: string;
+  // Other properties...
+};
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -28,6 +36,24 @@ const Navbar = () => {
 
   const [language, setLanguage] = useState("English");
   const [currency, setCurrency] = useState("KSH");
+  const [authenticated, setAuthenticated] = useState(false);
+  const [firstName, setFirstName] = useState<String>("");
+  const pathname = usePathname();
+  // console.log(pathname);
+
+  useEffect(() => {
+    const token = Cookies.get("token");
+
+    if (token) {
+      const decodedToken = jwtDecode(token) as JwtPayload;
+      setAuthenticated(true);
+      setFirstName(decodedToken?.firstname || "");
+      console.log(decodedToken);
+    } else {
+      console.log("Token not found in cookie");
+    }
+  }, [pathname]);
+
   return (
     <Disclosure as="nav">
       <>
@@ -169,21 +195,15 @@ py-3 text-[13px]"
                   onClick={() => setIsOpen(true)}
                 />
               </div>
-              <MyDropdown name={"LOGIN"} />
+              <MyDropdown
+                setAuthenticated={setAuthenticated}
+                authenticated={authenticated}
+                firstName={firstName}
+                setFirstName={setFirstName}
+              />
             </div>
 
             <div className="flex space-x-10 items-center xxxs:hidden md:flex">
-              {/* <Link href="/Agents" className="flex flex-col items-center">
-                <Image
-                  width={300}
-                  height={200}
-                  src="/icons/agent.png"
-                  alt="logo"
-                  className="w-[50px] h-[50px] object-contain"
-                />
-                <h2 className="text-white">Agents</h2>
-              </Link> */}
-
               <Link href="/faq" className="flex flex-col items-center">
                 <Image
                   width={300}
@@ -205,7 +225,12 @@ py-3 text-[13px]"
                 <h2 className="text-white">About Us</h2>
               </Link>
               <div>
-                <MyDropdown name={"Login"} />
+                <MyDropdown
+                  setAuthenticated={setAuthenticated}
+                  authenticated={authenticated}
+                  firstName={firstName}
+                  setFirstName={setFirstName}
+                />
               </div>
             </div>
           </div>
@@ -296,4 +321,6 @@ py-3 text-[13px]"
   );
 };
 
-export default Navbar;
+export default dynamic(() => Promise.resolve(Navbar), {
+  ssr: false,
+});

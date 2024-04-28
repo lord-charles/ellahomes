@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { CorouselImages } from "@/utils/data";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 const Banner = () => {
   return (
@@ -118,7 +119,9 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default dynamic(() => Promise.resolve(Banner), {
+  ssr: false,
+});
 
 
 

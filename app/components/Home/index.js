@@ -1,17 +1,7 @@
 "use client";
-import { useEffect } from "react";
-import { useState } from "react";
-import ListingItem from "../Listings/ListingItem";
-import ListingItem2 from "../Listings/ListingItem2";
-import ListingItem1 from "../Listings/ListingItem1";
 
-import Link from "next/link";
-import {
-  FeaturedData,
-  ForRent,
-  ForSale,
-  RecentOffers,
-} from "../../../utils/data";
+import ListingItem from "../Listings/ListingItem";
+import { FeaturedData } from "../../../utils/data";
 
 export default function HomeListings({ airbBnbs }) {
   return (

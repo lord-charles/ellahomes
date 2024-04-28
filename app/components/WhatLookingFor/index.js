@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
 
@@ -81,4 +82,6 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default dynamic(() => Promise.resolve(Index), {
+  ssr: false,
+});
