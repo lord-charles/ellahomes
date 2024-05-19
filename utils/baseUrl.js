@@ -1,1 +1,1 @@
-export const base_url = "https://api.ellahomeske.com/";
+export const base_url = "https://ellahomes-server.vercel.app/";

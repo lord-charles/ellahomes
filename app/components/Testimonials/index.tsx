@@ -18,7 +18,7 @@ const postData: DataType[] = [
     name: "Eva",
     profession: "2 years on Airbnb",
     comment:
-      "Betty is was very friendly and helped us with all our questions also she even let us check out later, which was very kind.The location is very good, the sea is just across the street and there is also an supermarket very close.",
+      "Betty was very friendly and helped us with all our questions also she even let us check out later, which was very kind.The location is very good, the sea is just across the street and there is also an supermarket very close.",
     imgSrc: "/assets/testimonial/eva.webp",
   },
 

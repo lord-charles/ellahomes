@@ -9,6 +9,7 @@ import { base_url } from "@/utils/baseUrl";
 import SkeletonCard from "../../ui/SkeletonCard";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Link from "next/link";
 
 const PropertyDetail = ({ params }) => {
   const { details } = params;
@@ -108,9 +109,11 @@ const PropertyDetail = ({ params }) => {
                   <button className="px-8 py-4 font-medium rounded-full text-cyan-500 bg-cyan-100 focus:outline-none">
                     Request Callback
                   </button>
-                  <button className="px-8 py-4 font-medium text-white rounded-full bg-lime-500 focus:outline-none">
-                    Book Now
-                  </button>
+                  <Link href={`/payment/${details}`}>
+                    <button className="px-8 py-4 font-medium text-white rounded-full bg-lime-500 focus:outline-none w-full">
+                      Book Now
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div className="xxxs:hidden md:flex lg:flex">

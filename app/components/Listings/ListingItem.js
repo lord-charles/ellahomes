@@ -2,7 +2,6 @@ import Moment from "react-moment";
 import { MdLocationOn } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
-import { title } from "process";
 export default function airbBnbItem({ airbBnb }) {
   return (
     <li className="relative bg-white flex flex-col justify-between items-center shadow-md hover:shadow-xl rounded-md overflow-hidden transition-shadow duration-150 m-[10px]">
