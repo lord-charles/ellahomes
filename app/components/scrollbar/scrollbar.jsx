@@ -7,7 +7,7 @@ import { StyledScrollbar, StyledRootScrollbar } from './styles';
 
 // ----------------------------------------------------------------------
 
-const Scrollbar = forwardRef(({ children, sx, ...other }, ref) => {
+const Scrollbar = ({ children, sx, ...other }, ref) => {
   const userAgent =
     typeof navigator === "undefined" ? "SSR" : navigator.userAgent;
 
@@ -38,7 +38,7 @@ const Scrollbar = forwardRef(({ children, sx, ...other }, ref) => {
       </StyledScrollbar>
     </StyledRootScrollbar>
   );
-});
+};
 
 Scrollbar.propTypes = {
   children: PropTypes.node,
