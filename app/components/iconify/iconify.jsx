@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 
 // ----------------------------------------------------------------------
 
-const Iconify = forwardRef(({ icon, width = 20, sx, ...other }, ref) => (
+const Iconify = ({ icon, width = 20, sx, ...other }, ref) => (
   <Box
     ref={ref}
     component={Icon}
@@ -15,7 +15,7 @@ const Iconify = forwardRef(({ icon, width = 20, sx, ...other }, ref) => (
     sx={{ width, height: width, ...sx }}
     {...other}
   />
-));
+);
 
 Iconify.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),

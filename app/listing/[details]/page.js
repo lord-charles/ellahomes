@@ -106,9 +106,12 @@ const PropertyDetail = ({ params }) => {
                 </div>
 
                 <div className="flex flex-col space-y-6 md:space-x-6 md:items-end md:flex-row md:space-y-0">
-                  <button className="px-8 py-4 font-medium rounded-full text-cyan-500 bg-cyan-100 focus:outline-none">
+                  <Link
+                    href={`/contact`}
+                    className="px-8 py-4 font-medium rounded-full text-cyan-500 bg-cyan-100 focus:outline-none"
+                  >
                     Request Callback
-                  </button>
+                  </Link>
                   <Link href={`/payment/${details}`}>
                     <button className="px-8 py-4 font-medium text-white rounded-full bg-lime-500 focus:outline-none w-full">
                       Book Now

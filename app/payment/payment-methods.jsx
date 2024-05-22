@@ -15,6 +15,7 @@ import Iconify from "../components/iconify";
 
 import PaymentNewCardDialog from "./payment-new-card-dialog";
 import Image from "next/image";
+import { InputAdornment } from "@mui/material";
 
 // ----------------------------------------------------------------------
 
@@ -108,8 +109,8 @@ function OptionItem({
     setPhoneNumber(value);
 
     // Validate the phone number
-    if (!/^0[17]\d{8}$/.test(value)) {
-      setError("Phone number must be 10 digits and start with 07 or 01");
+    if (!/^[17]\d{8}$/.test(value)) {
+      setError("Phone number must be 9 digits and start with 7 or 1");
     } else {
       setError("");
     }
@@ -227,12 +228,28 @@ function OptionItem({
           }}
         >
           <TextField
-            fullWidth
+            id="filled-textarea"
             label="Phone Number"
+            placeholder="700000000"
+            multiline
+            variant="filled"
+            color="success"
             value={phoneNumber}
             onChange={handleChange}
             error={!!error}
             helperText={error}
+            fullWidth
+            InputProps={{
+              startAdornment: (
+                <InputAdornment
+                  position="start"
+                  className="relative top-[-7px]"
+                >
+                  254
+                </InputAdornment>
+              ),
+            }}
+            className="border-none focus:border-none"
           />
         </Stack>
       )}

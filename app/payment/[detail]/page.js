@@ -21,15 +21,45 @@ const Payment = ({ params }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [method, setMethod] = useState("Mpesa");
   const [selectedCard, setSelectedCard] = useState(null);
+  const [listing, setListing] = useState(null);
+  const [days, setDays] = useState(1);
+  const [date, setDate] = useState(null);
+  const [date2, setDate2] = useState(null);
+  const [bookedDates, setBookedDates] = useState([]);
 
-  console.log("card", selectedCard);
-  console.log("phone", phoneNumber);
+  // console.log("card", selectedCard);
+  // console.log("phone", phoneNumber);
+  console.log(days);
 
   const getCards = async (id) => {
     try {
       const res = await axios.get(`${base_url}cards/${id}`);
       setCards(res.data);
       console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const getProduct = async (id) => {
+    try {
+      const res = await axios.get(`${base_url}products/${detail}`);
+      setListing(res.data);
+      console.log(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const getBookedDates = async () => {
+    try {
+      const res = await axios.post(`${base_url}book/get`, {
+        propertyId: detail,
+        future: true,
+        COMPLETE: true,
+      });
+      setBookedDates(res.data);
+      console.log(res.data);
     } catch (error) {
       console.log(error);
     }
@@ -43,10 +73,14 @@ const Payment = ({ params }) => {
       setAuthenticated(true);
       setUserData(decodedToken);
       getCards(decodedToken.userId);
+      getProduct();
     } else {
       console.log("Token not found in cookie");
     }
+
+    getBookedDates();
   }, []);
+
   return (
     <Container
       sx={{
@@ -88,7 +122,16 @@ const Payment = ({ params }) => {
               }),
             }}
           >
-            <PaymentBillingAddress userData={userData} />
+            <PaymentBillingAddress
+              userData={userData}
+              days={days}
+              setDays={setDays}
+              date={date}
+              setDate={setDate}
+              date2={date2}
+              setDate2={setDate2}
+              bookedDates={bookedDates}
+            />
 
             <PaymentMethods
               userData={userData}
@@ -105,7 +148,17 @@ const Payment = ({ params }) => {
         </Grid>
 
         <Grid xs={12} md={4}>
-          <PaymentSummary />
+          <PaymentSummary
+            phoneNumber={phoneNumber}
+            method={method}
+            selectedCard={selectedCard}
+            listing={listing}
+            days={days}
+            propertyId={detail}
+            userData={userData}
+            date={date}
+            date2={date2}
+          />
         </Grid>
       </Grid>
     </Container>

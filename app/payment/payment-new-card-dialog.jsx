@@ -13,6 +13,7 @@ import Iconify from "../components/iconify";
 import CustomPopover, { usePopover } from "../components/custom-popover";
 import axios from "axios";
 import { base_url } from "../../utils/baseUrl";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function PaymentNewCardDialog({
   onClose,
@@ -25,6 +26,7 @@ export default function PaymentNewCardDialog({
   const [expirationDate, setExpirationDate] = useState("");
   const [cvv, setCvv] = useState("");
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const popover = usePopover();
 
@@ -57,6 +59,7 @@ export default function PaymentNewCardDialog({
 
   const postCard = async () => {
     try {
+      setLoading(true);
       const res = await axios.post(`${base_url}cards`, {
         cardNumber,
         cardHolder,
@@ -66,14 +69,18 @@ export default function PaymentNewCardDialog({
       });
       console.log(res);
       await getCards(userData?.userId);
+      toast.success("Success");
       onClose();
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} />
       <Dialog maxWidth="sm" onClose={onClose} {...other}>
         <DialogTitle>New Card</DialogTitle>
 
@@ -159,7 +166,7 @@ export default function PaymentNewCardDialog({
             color="inherit"
             className="text-green-500"
           >
-            Add
+            {loading ? "Adding..." : "Add"}
           </Button>
         </DialogActions>
       </Dialog>

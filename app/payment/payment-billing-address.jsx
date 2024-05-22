@@ -1,23 +1,22 @@
-import Stack from "@mui/material/Stack";
-import TextField from "@mui/material/TextField";
-import Typography from "@mui/material/Typography";
-// ** Third Party Import
+import React, { useState, useEffect, forwardRef } from "react";
+import { Stack, TextField, Typography, Grid } from "@mui/material";
 import DatePicker from "react-datepicker";
-
-// ** Third Party Styles Imports
 import "react-datepicker/dist/react-datepicker.css";
-
-// ** Styled Components
 import DatePickerWrapper from "../../utils/react-datepicker/index";
-import { forwardRef, useEffect, useState } from "react";
-import { Grid } from "@mui/material";
-import { jwtDecode } from "jwt-decode";
-import Cookies from "js-cookie";
+
 // ----------------------------------------------------------------------
 
-export default function PaymentBillingAddress({ userData }) {
-  const [date, setDate] = useState(null);
-  const [date2, setDate2] = useState(null);
+export default function PaymentBillingAddress({
+  userData,
+  days,
+  setDays,
+  date,
+  setDate,
+  date2,
+  setDate2,
+  bookedDates, // Pass booked dates as a prop
+}) {
+  const now = new Date(); // Get the current date and time
 
   const CustomInput = forwardRef(function CustomInput(props, ref) {
     return <TextField inputRef={ref} label="Check-in Time" {...props} />;
@@ -28,6 +27,33 @@ export default function PaymentBillingAddress({ userData }) {
     return <TextField inputRef={ref} label="Check-out Time" {...props} />;
   });
   CustomInput2.displayName = "CustomInput2";
+
+  useEffect(() => {
+    if (date && date2) {
+      const diffTime = date2.getTime() - date.getTime();
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      setDays(diffDays > 0 ? diffDays : 1);
+    }
+  }, [date, date2]);
+
+  const endOfDay = new Date();
+  endOfDay.setHours(23, 59, 59, 999); // Set max time to end of the day
+
+  // Convert booked dates to Date objects and generate array of all booked dates
+  const allBookedDates = bookedDates.flatMap(
+    ({ checkinDate, checkoutDate }) => {
+      const dates = [];
+      let currentDate = new Date(checkinDate);
+      const endDate = new Date(checkoutDate);
+
+      while (currentDate <= endDate) {
+        dates.push(new Date(currentDate));
+        currentDate.setDate(currentDate.getDate() + 1);
+      }
+
+      return dates;
+    }
+  );
 
   return (
     <div>
@@ -48,13 +74,22 @@ export default function PaymentBillingAddress({ userData }) {
               id="account-settings-date"
               placeholderText="MM-DD-YYYY hh:mm AM/PM"
               customInput={<CustomInput />}
-              onChange={(date) => setDate(date)}
+              onChange={(date) => {
+                setDate(date);
+                setDate2(null);
+              }}
+              minDate={now}
+              minTime={now}
+              maxTime={endOfDay}
+              filterTime={(time) => date || time.getTime() >= now.getTime()}
+              excludeDates={allBookedDates}
             />
           </DatePickerWrapper>
 
           <DatePickerWrapper>
             <DatePicker
               selected={date2}
+              minDate={date || now}
               showYearDropdown
               showMonthDropdown
               showTimeSelect
@@ -66,6 +101,10 @@ export default function PaymentBillingAddress({ userData }) {
               placeholderText="MM-DD-YYYY hh:mm AM/PM"
               customInput={<CustomInput2 />}
               onChange={(date) => setDate2(date)}
+              minTime={date ? date : now}
+              maxTime={endOfDay}
+              filterTime={(time) => !date || time.getTime() > date.getTime()}
+              excludeDates={allBookedDates}
             />
           </DatePickerWrapper>
         </Grid>
