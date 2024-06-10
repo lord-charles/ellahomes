@@ -57,8 +57,9 @@ const Navbar = () => {
     <Disclosure as="nav">
       <>
         <div
-          className=" bg-gray-900
-py-3 text-[13px]"
+          className="
+py-3 text-[13px] bg-cyan-600"
+          // style={{ backgroundColor: "#e1f2fc" }}
         >
           <div className="lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px]  flex justify-between">
             <div className="text-white md:flex xxxs:hidden">
@@ -168,11 +169,15 @@ py-3 text-[13px]"
         </div>
         <Divider className="bg-black h-[0.5px]" />
 
-        <div className="bg-gray-900 py-3">
+        <div
+          className=" py-3 bg-gray-600"
+
+          // style={{ backgroundColor: "#e1f2fc" }}
+        >
           <div className="flex justify-between items-center lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px]">
             <IconButton>
               <Link
-                className="text-white font-bold text-[30px]  ml-[-90px] h-[100px]"
+                className="text-white font-bold text-[30px]  ml-[-150px] h-[148px]"
                 href="/"
               >
                 <Image
@@ -180,10 +185,10 @@ py-3 text-[13px]"
                   height={200}
                   src="/ella-homes-logo.png"
                   alt="logo"
-                  className="md:w-[390px] h-[90px] object-contain"
+                  className="md:w-[500px] h-[130px] "
                 />
-                <h2 className="text-white text-[14px] relative top-[5px] left-2 custom-font-p animate-pulse rounded-md">
-                  STAY. RELAX. REPEAT.
+                <h2 className="text-white text-[18px] relative top-[5px] left-2 custom-font-p animate-pulse rounded-md italic">
+                  Stay. Relax. Repeat.
                 </h2>
               </Link>
             </IconButton>
@@ -238,7 +243,10 @@ py-3 text-[13px]"
           </div>
         </div>
 
-        <div className="bg-gray-800">
+        <div
+          className="bg-gray-500"
+          // style={{ backgroundColor: "#e1f2fc" }}
+        >
           <div className="lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px]  flex justify-between py-4">
             <div className="flex items-center gap-x-8">
               <Menu as="div" className="relative inline-block ">
@@ -250,7 +258,7 @@ py-3 text-[13px]"
                       height={40}
                       alt="menu"
                     />
-                    <h2 className="font-serif text-[17px] text-white">
+                    <h2 className="font-serif text-[20px] text-white font-bold ">
                       CATEGORY
                     </h2>
                     <ChevronDownIcon
@@ -292,13 +300,13 @@ py-3 text-[13px]"
               </Menu>
 
               <div className="flex space-x-3 font-serif text-white ">
-                <div className="text-white text-[14px] rounded-md">
+                <div className="text-white text-[18px] rounded-md font-bold">
                   <Link href="/">HOME</Link>
                 </div>
-                <div className="text-white text-[14px] rounded-md">
+                <div className="text-white text-[18px] rounded-md font-bold">
                   <Link href="/blog">BLOGS</Link>
                 </div>
-                <div className="text-white text-[14px] rounded-md">
+                <div className="text-white text-[18px] rounded-md font-bold">
                   <Link href="/contact">CONTACT</Link>
                 </div>
               </div>
