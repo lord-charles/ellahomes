@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       <AboutView />
-      <AboutTeam />
+      {/* <AboutTeam /> */}
       <AboutTestimonials />
       {/* <AboutWhat /> */}
       {/* <AboutVision /> */}

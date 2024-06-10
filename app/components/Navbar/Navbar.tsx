@@ -48,7 +48,6 @@ const Navbar = () => {
       const decodedToken = jwtDecode(token) as JwtPayload;
       setAuthenticated(true);
       setFirstName(decodedToken?.firstname || "");
-      console.log(decodedToken);
     } else {
       console.log("Token not found in cookie");
     }
@@ -61,17 +60,17 @@ const Navbar = () => {
           className=" bg-gray-900
 py-3 text-[13px]"
         >
-          <div className="lg:mx-[340px] xl:mx-[200px] xxl:mx-[340px] md:mx-[10px] xxs:mx-[1px] flex justify-between">
+          <div className="lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px]  flex justify-between">
             <div className="text-white md:flex xxxs:hidden">
-              EllaHomes & Property Realtors
+              EllaHomes & Airbnb Experts
             </div>
 
             <div className="flex xxxs:justify-between mx-2 xxxs:w-full md:w-fit md:space-x-7">
               <div>
                 <span className=" text-white">
                   Hotline:
-                  <Link className="text-white" href="tel:+254 721636368s">
-                    +254 721636368
+                  <Link className="text-white" href="tel:+254 717808035">
+                    +254 717808035
                   </Link>
                 </span>
               </div>
@@ -170,19 +169,22 @@ py-3 text-[13px]"
         <Divider className="bg-black h-[0.5px]" />
 
         <div className="bg-gray-900 py-3">
-          <div className="flex justify-between lg:mx-[340px] xl:mx-[200px] xxl:mx-[340px] md:mx-[10px] items-center">
+          <div className="flex justify-between items-center lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px]">
             <IconButton>
               <Link
-                className="text-white font-bold text-[30px]  ml-[-90px] h-[80px]"
-                href=""
+                className="text-white font-bold text-[30px]  ml-[-90px] h-[100px]"
+                href="/"
               >
                 <Image
                   width={300}
                   height={200}
                   src="/ella-homes-logo.png"
                   alt="logo"
-                  className="md: w-[300px] h-[100px] object-contain"
+                  className="md:w-[390px] h-[90px] object-contain"
                 />
+                <h2 className="text-white text-[14px] relative top-[5px] left-2 custom-font-p animate-pulse rounded-md">
+                  STAY. RELAX. REPEAT.
+                </h2>
               </Link>
             </IconButton>
 
@@ -237,7 +239,7 @@ py-3 text-[13px]"
         </div>
 
         <div className="bg-gray-800">
-          <div className="lg:mx-[340px] xl:mx-[200px] md:mx-[20px] xxl:mx-[340px] flex justify-between py-4">
+          <div className="lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px]  flex justify-between py-4">
             <div className="flex items-center gap-x-8">
               <Menu as="div" className="relative inline-block ">
                 <div>
@@ -302,11 +304,7 @@ py-3 text-[13px]"
               </div>
             </div>
 
-            <div className="xxxs:hidden md:flex">
-              <h2 className="text-white text-[24px] custom-font-p animate-pulse rounded-md">
-                STAY. RELAX. REPEAT.
-              </h2>
-            </div>
+            <div className="xxxs:hidden md:flex"></div>
           </div>
         </div>
 

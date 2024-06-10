@@ -27,10 +27,6 @@ const Payment = ({ params }) => {
   const [date2, setDate2] = useState(null);
   const [bookedDates, setBookedDates] = useState([]);
 
-  // console.log("card", selectedCard);
-  // console.log("phone", phoneNumber);
-  console.log(days);
-
   const getCards = async (id) => {
     try {
       const res = await axios.get(`${base_url}cards/${id}`);

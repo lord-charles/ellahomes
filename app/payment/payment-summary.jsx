@@ -3,20 +3,58 @@ import PropTypes from "prop-types";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import Switch from "@mui/material/Switch";
+import { styled } from "@mui/material/styles";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 
 import Label from "../components/label";
 import Iconify from "../components/iconify";
-import { TextField } from "@mui/material";
+import {
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
+} from "@mui/material";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { base_url } from "@/utils/baseUrl";
 import { runFireworks } from "../Success";
+import InputBase from "@mui/material/InputBase";
 
-// ----------------------------------------------------------------------
+const BootstrapInput = styled(InputBase)(({ theme }) => ({
+  "label + &": {
+    marginTop: theme.spacing(3),
+  },
+  "& .MuiInputBase-input": {
+    borderRadius: 4,
+    position: "relative",
+    backgroundColor: theme.palette.background.paper,
+    border: "1px solid #ced4da",
+    fontSize: 16,
+    padding: "10px 26px 10px 12px",
+    transition: theme.transitions.create(["border-color", "box-shadow"]),
+    // Use the system font instead of the default Roboto font.
+    fontFamily: [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
+    "&:focus": {
+      borderRadius: 4,
+      borderColor: "#80bdff",
+      boxShadow: "0 0 0 0.2rem rgba(0,123,255,.25)",
+    },
+  },
+}));
 
 export default function PaymentSummary({
   sx,
@@ -89,7 +127,6 @@ export default function PaymentSummary({
         checkoutDate: date2,
         invoiceId,
       });
-      console.log(res.data);
     } catch (error) {
       console.log(error);
     }
@@ -109,7 +146,6 @@ export default function PaymentSummary({
       });
 
       const res = api.post(`/payment`, paymentData).then((response) => {
-        console.log(response.data);
         if (response.data?.paymentData.invoice?.state === "PENDING") {
           book(response.data.paymentData.invoice.invoice_id);
           checkPaymentStatus(response.data.paymentData.invoice.invoice_id);
@@ -132,7 +168,6 @@ export default function PaymentSummary({
   }, [ratePerNight]);
 
   const RenderPrice = () => {
-    // State to handle the selected option
     const [selectedOption, setSelectedOption] = useState(
       hasValidPrices ? Object.keys(prices).find((key) => key !== "_id") : ""
     );
@@ -142,35 +177,36 @@ export default function PaymentSummary({
       setSelectedOption(value);
       const selectedPriceDetails = JSON.parse(value);
       setBasePrice(selectedPriceDetails?.rate_per_night);
-      console.log(selectedPriceDetails);
     };
 
     return (
       <Stack direction="row" justifyContent="flex-end">
         {hasValidPrices ? (
-          <TextField
-            select
-            fullWidth
-            onChange={handleChangeCard}
-            value={selectedOption}
-            SelectProps={{ native: true }}
-          >
-            {Object.keys(prices).map(
-              (key) =>
-                key !== "_id" && (
-                  <option
-                    key={key}
-                    value={JSON.stringify({
-                      rate_per_night: prices[key].rate_per_night,
-                      max_guests: prices[key].max_guests,
-                    })}
-                  >
-                    {key} - ${prices[key].rate_per_night} / night (Max Guests:{" "}
-                    {prices[key].max_guests})
-                  </option>
-                )
-            )}
-          </TextField>
+          <FormControl sx={{ m: 1 }} variant="filled" fullWidth>
+            <InputLabel>Price Range</InputLabel>
+            <Select
+              label
+              id="demo-customized-select"
+              onChange={handleChangeCard}
+              value={selectedOption}
+            >
+              {Object.keys(prices).map(
+                (key) =>
+                  key !== "_id" && (
+                    <MenuItem
+                      key={key}
+                      value={JSON.stringify({
+                        rate_per_night: prices[key].rate_per_night,
+                        max_guests: prices[key].max_guests,
+                      })}
+                    >
+                      {key} - Ksh{prices[key].rate_per_night} / night (Max
+                      Guests: {prices[key].max_guests})
+                    </MenuItem>
+                  )
+              )}
+            </Select>
+          </FormControl>
         ) : (
           <div className="items-center flex space-x-1">
             <Typography variant="h4">Ksh</Typography>

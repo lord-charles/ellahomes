@@ -20,9 +20,8 @@ const Index = () => {
               className="rounded-sm"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/30 rounded-sm">
-              <h4 className="text-3xl font-bold">150</h4>
               <p className="font-semibold uppercase opacity-90">
-                Independent Homes
+                Own Compound Homes
               </p>
             </div>
           </div>
@@ -38,7 +37,6 @@ const Index = () => {
               className="rounded-sm"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/30 rounded-sm">
-              <h4 className="text-3xl font-bold">23</h4>
               <p className="font-semibold uppercase opacity-90">Townships</p>
             </div>
           </div>
@@ -54,9 +52,8 @@ const Index = () => {
               className="rounded-sm"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/30 rounded-sm">
-              <h4 className="text-3xl font-bold">456</h4>
               <p className="font-semibold uppercase opacity-90">
-                Office Spaces
+                Spacious Spaces
               </p>
             </div>
           </div>
@@ -72,7 +69,6 @@ const Index = () => {
               className="rounded-sm"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/30 rounded-sm">
-              <h4 className="text-3xl font-bold">260</h4>
               <p className="font-semibold uppercase opacity-90">Apartments</p>
             </div>
           </div>

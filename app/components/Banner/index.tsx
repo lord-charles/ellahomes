@@ -9,7 +9,7 @@ import dynamic from "next/dynamic";
 const Banner = () => {
   return (
     <div className="relative top-[10px]">
-      <div className="lg:mx-[340px] xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[340px] ">
+      <div className="lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px] ">
         <div className="flex justify-between items-center lg:flex-row xxxs:flex-col space-y-4">
           <div className="lg:w-[50%] h-fit xxxs:w-[100%] rounded-md">
             <Carousel

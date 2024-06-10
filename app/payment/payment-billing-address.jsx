@@ -3,8 +3,7 @@ import { Stack, TextField, Typography, Grid } from "@mui/material";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePickerWrapper from "../../utils/react-datepicker/index";
-
-// ----------------------------------------------------------------------
+import { startOfDay } from "date-fns";
 
 export default function PaymentBillingAddress({
   userData,
@@ -17,7 +16,7 @@ export default function PaymentBillingAddress({
   bookedDates, // Pass booked dates as a prop
 }) {
   const now = new Date(); // Get the current date and time
-
+  const startOfDayTime = startOfDay(new Date());
   const CustomInput = forwardRef(function CustomInput(props, ref) {
     return <TextField inputRef={ref} label="Check-in Time" {...props} />;
   });
@@ -101,7 +100,7 @@ export default function PaymentBillingAddress({
               placeholderText="MM-DD-YYYY hh:mm AM/PM"
               customInput={<CustomInput2 />}
               onChange={(date) => setDate2(date)}
-              minTime={date ? date : now}
+              minTime={startOfDayTime}
               maxTime={endOfDay}
               filterTime={(time) => !date || time.getTime() > date.getTime()}
               excludeDates={allBookedDates}

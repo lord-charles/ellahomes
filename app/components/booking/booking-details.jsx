@@ -23,18 +23,11 @@ import Scrollbar from "../scrollbar";
 import { TableHeadCustom } from "../table";
 import CustomPopover, { usePopover } from "../custom-popover";
 
-// ----------------------------------------------------------------------
 
-export default function BookingDetails({
-  title,
-  subheader,
-  tableLabels,
-  tableData,
-  ...other
-}) {
+export default function BookingDetails({ tableData, title, tableLabels }) {
   return (
-    <Card {...other}>
-      <CardHeader title={title} subheader={subheader} sx={{ mb: 3 }} />
+    <Card>
+      <CardHeader title={title} sx={{ mb: 3 }} />
 
       <TableContainer sx={{ overflow: "unset" }}>
         <Scrollbar>
@@ -42,7 +35,7 @@ export default function BookingDetails({
             <TableHeadCustom headLabel={tableLabels} />
 
             <TableBody>
-              {tableData.map((row) => (
+              {tableData?.map((row) => (
                 <BookingDetailsRow key={row.id} row={row} />
               ))}
             </TableBody>
@@ -51,22 +44,6 @@ export default function BookingDetails({
       </TableContainer>
 
       <Divider sx={{ borderStyle: "dashed" }} />
-
-      <Box sx={{ p: 2, textAlign: "right" }}>
-        <Button
-          size="small"
-          color="inherit"
-          endIcon={
-            <Iconify
-              icon="eva:arrow-ios-forward-fill"
-              width={18}
-              sx={{ ml: -0.5 }}
-            />
-          }
-        >
-          View All
-        </Button>
-      </Box>
     </Card>
   );
 }
@@ -106,24 +83,23 @@ function BookingDetailsRow({ row }) {
     popover.onClose();
     console.info("DELETE", row.id);
   };
-
   return (
     <>
       <TableRow>
         <TableCell sx={{ display: "flex", alignItems: "center" }}>
           <Avatar
             variant="rounded"
-            alt={row.destination.name}
-            src={row.destination.coverUrl}
+            alt={row?.propertyId?.title}
+            src={row.propertyId?.detailImage}
             sx={{ mr: 2, width: 48, height: 48 }}
           />
-          {row.destination.name}
+          {row?.propertyId?.title}
         </TableCell>
 
         <TableCell>
           <ListItemText
-            primary={row.customer.name}
-            secondary={row.customer.phoneNumber}
+            primary={row?.userId?.firstname}
+            secondary={row?.userId.mobile}
             primaryTypographyProps={{ typography: "body2", noWrap: true }}
             secondaryTypographyProps={{
               mt: 0.5,
@@ -135,8 +111,8 @@ function BookingDetailsRow({ row }) {
 
         <TableCell>
           <ListItemText
-            primary={format(new Date(row.checkIn), "dd MMM yyyy")}
-            secondary={format(new Date(row.checkIn), "p")}
+            primary={format(new Date(row?.checkinDate), "dd MMM yyyy")}
+            secondary={format(new Date(row?.checkinDate), "p")}
             primaryTypographyProps={{ typography: "body2", noWrap: true }}
             secondaryTypographyProps={{
               mt: 0.5,
@@ -148,8 +124,8 @@ function BookingDetailsRow({ row }) {
 
         <TableCell>
           <ListItemText
-            primary={format(new Date(row.checkOut), "dd MMM yyyy")}
-            secondary={format(new Date(row.checkOut), "p")}
+            primary={format(new Date(row?.checkoutDate), "dd MMM yyyy")}
+            secondary={format(new Date(row?.checkoutDate), "p")}
             primaryTypographyProps={{ typography: "body2", noWrap: true }}
             secondaryTypographyProps={{
               mt: 0.5,
@@ -157,25 +133,30 @@ function BookingDetailsRow({ row }) {
               typography: "caption",
             }}
           />
+        </TableCell>
+        <TableCell>
+          <h2>{row?.paymentDetails?.invoice?.value}</h2>
         </TableCell>
 
         <TableCell>
           <Label
             variant={lightMode ? "soft" : "filled"}
             color={
-              (row.status === "Paid" && "success") ||
-              (row.status === "Pending" && "warning") ||
+              (row?.paymentDetails?.invoice?.state === "COMPLETE" &&
+                "success") ||
+              row.status === "PENDING" ||
+              (row.status === "PROCESSING" && "warning") ||
               "error"
             }
           >
-            {row.status}
+            {row?.paymentDetails?.invoice?.state}
           </Label>
         </TableCell>
 
         <TableCell align="right" sx={{ pr: 1 }}>
           <IconButton
             color={popover.open ? "inherit" : "default"}
-            onClick={popover.onOpen}
+            // onClick={popover.onOpen}
           >
             <Iconify icon="eva:more-vertical-fill" />
           </IconButton>

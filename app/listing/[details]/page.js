@@ -2,20 +2,33 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { FeaturedData } from "@/utils/data";
-import FeaturedRelated from "../../components/Listings/FeaturedRelated";
 import axios from "axios";
 import { base_url } from "@/utils/baseUrl";
 import SkeletonCard from "../../ui/SkeletonCard";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from "next/link";
+import Cookies from "js-cookie";
+import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import DialogTitle from "@mui/material/DialogTitle";
+import Dialog from "@mui/material/Dialog";
+import PersonIcon from "@mui/icons-material/Person";
+import AddIcon from "@mui/icons-material/Add";
+import Typography from "@mui/material/Typography";
+import { blue } from "@mui/material/colors";
+import PropTypes from "prop-types";
 
 const PropertyDetail = ({ params }) => {
   const { details } = params;
   const [currentProduct, setCurrentProduct] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  // console.log(currentProduct);
+  const [authenticated, setAuthenticated] = useState(false);
 
   const getProduct = async () => {
     try {
@@ -30,11 +43,181 @@ const PropertyDetail = ({ params }) => {
   };
 
   useEffect(() => {
+    const token = Cookies.get("token");
+
+    if (token) {
+      setAuthenticated(true);
+    } else {
+      console.log("Token not found in cookie");
+    }
+
     getProduct();
   }, []);
 
+  const emails = ["username@gmail.com", "user02@gmail.com"];
+  const [open, setOpen] = React.useState(false);
+  const [selectedValue, setSelectedValue] = React.useState(emails[1]);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+    setSelectedValue(value);
+  };
+  function SimpleDialog(props) {
+    const { onClose, selectedValue, open } = props;
+
+    const handleClose = () => {
+      onClose(selectedValue);
+    };
+
+    const handleWhatsAppClick = () => {
+      const phoneNumber = "254701374731"; // Replace with your WhatsApp number
+      const message = `Hello, I would like to book room ${currentProduct.title}.`; // Your pre-filled message
+      const encodedMessage = encodeURIComponent(message);
+      window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    };
+
+    const handleWhatsAppClick2 = () => {
+      const phoneNumber = "254717808035"; // Replace with your WhatsApp number
+      const message = `Hello, I would like to book room ${currentProduct.title}.`; // Your pre-filled message
+      const encodedMessage = encodeURIComponent(message);
+      window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    };
+
+    const handleGmailClick = () => {
+      const email = "ellaholidayhomeskenya@gmail.com";
+      const subject = encodeURIComponent("Room Booking Inquiry");
+      const body = encodeURIComponent(
+        `Hello, I would like to book  ${currentProduct.title}.`
+      );
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    };
+
+    const handlePhoneClick = () => {
+      const phoneNumber = "+254701374731";
+      window.location.href = `tel:${phoneNumber}`; //
+    };
+    const handlePhoneClick2 = () => {
+      const phoneNumber = "+254717808035";
+      window.location.href = `tel:${phoneNumber}`; //
+    };
+
+    const handleSMSClick = () => {
+      const phoneNumber = "+254701374731"; // Replace with your phone number
+      const message = encodeURIComponent(
+        `Hello, I would like to book room  ${currentProduct.title}.`
+      );
+      window.location.href = `sms:${phoneNumber}?body=${message}`;
+    };
+
+    const handleSMSClick2 = () => {
+      const phoneNumber = "+254717808035"; // Replace with your phone number
+      const message = encodeURIComponent(
+        `Hello, I would like to book room  ${currentProduct.title}.`
+      );
+      window.location.href = `sms:${phoneNumber}?body=${message}`;
+    };
+
+    return (
+      <Dialog onClose={handleClose} open={open}>
+        <List sx={{ pt: 0 }}>
+          <ListItem disableGutters>
+            <ListItemButton onClick={() => handleWhatsAppClick()}>
+              <ListItemAvatar>
+                <Avatar sx={{ bgcolor: blue[100], color: blue[600] }}>
+                  <PersonIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary={"Contact via WhatsApp1"} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disableGutters>
+            <ListItemButton onClick={() => handleWhatsAppClick2()}>
+              <ListItemAvatar>
+                <Avatar sx={{ bgcolor: blue[100], color: blue[600] }}>
+                  <PersonIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary={"Contact via WhatsApp2"} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disableGutters>
+            <ListItemButton autoFocus onClick={() => handlePhoneClick()}>
+              <ListItemAvatar>
+                <Avatar>
+                  <PersonIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Contact via Phone1" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disableGutters>
+            <ListItemButton autoFocus onClick={() => handlePhoneClick2()}>
+              <ListItemAvatar>
+                <Avatar>
+                  <PersonIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Contact via Phone2" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disableGutters>
+            <ListItemButton autoFocus onClick={() => handleSMSClick()}>
+              <ListItemAvatar>
+                <Avatar>
+                  <PersonIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Contact via SMS1" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disableGutters>
+            <ListItemButton autoFocus onClick={() => handleSMSClick2()}>
+              <ListItemAvatar>
+                <Avatar>
+                  <PersonIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Contact via SMS2" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disableGutters>
+            <ListItemButton autoFocus onClick={() => handleGmailClick()}>
+              <ListItemAvatar>
+                <Avatar>
+                  <PersonIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Contact via Gmail" />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Dialog>
+    );
+  }
+
+  SimpleDialog.propTypes = {
+    onClose: PropTypes.func.isRequired,
+    open: PropTypes.bool.isRequired,
+    selectedValue: PropTypes.string.isRequired,
+  };
+
   return (
     <div className="w-screen overflow-x-hidden">
+      <SimpleDialog
+        selectedValue={selectedValue}
+        open={open}
+        onClose={handleClose}
+      />
+
       {isLoading || !currentProduct ? (
         <>
           <div className="lg:mx-[320px] flex-1 grid md:grid-cols-3 xxxs:grid-cols-1 content-center gap-4 mt-6">
@@ -112,11 +295,27 @@ const PropertyDetail = ({ params }) => {
                   >
                     Request Callback
                   </Link>
-                  <Link href={`/payment/${details}`}>
-                    <button className="px-8 py-4 font-medium text-white rounded-full bg-lime-500 focus:outline-none w-full">
-                      Book Now
-                    </button>
-                  </Link>
+                  <div>
+                    {authenticated ? (
+                      // <Link href={`/payment/${details}`}>
+                      <button
+                        className="px-8 py-4 font-medium text-white rounded-full bg-lime-500 focus:outline-none w-full"
+                        onClick={handleClickOpen}
+                      >
+                        Book Now
+                      </button>
+                    ) : (
+                      // </Link>
+                      // <Link href="/auth/login">
+                      <button
+                        className="px-8 py-4 font-medium text-white rounded-full bg-lime-500 focus:outline-none w-full"
+                        onClick={handleClickOpen}
+                      >
+                        Book Now
+                      </button>
+                      // {/* </Link> */}
+                    )}
+                  </div>
                 </div>
               </div>
               <div className="xxxs:hidden md:flex lg:flex">

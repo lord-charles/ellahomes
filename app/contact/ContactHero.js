@@ -19,7 +19,7 @@ const CONTACTS = [
   {
     country: "Nyali",
     address: "1st Ave, Mombasa",
-    phoneNumber: "254 721636368",
+    phoneNumber: "254 701374731",
     email: "info@ellahomeske.com",
   },
   {
