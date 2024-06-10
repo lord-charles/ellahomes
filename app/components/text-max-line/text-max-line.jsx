@@ -10,51 +10,53 @@ import useTypography from "./use-typography";
 // ----------------------------------------------------------------------
 
 const TextMaxLine = (
-  {
-    asLink,
-    variant = "body1",
-    line = 2,
-    persistent = false,
-    children,
-    sx,
-    ...other
-  },
-  ref
-) => {
-  const { lineHeight } = useTypography(variant);
+  (
+    {
+      asLink,
+      variant = "body1",
+      line = 2,
+      persistent = false,
+      children,
+      sx,
+      ...other
+    },
+    ref
+  ) => {
+    const { lineHeight } = useTypography(variant);
 
-  const styles = {
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    display: "-webkit-box",
-    WebkitLineClamp: line,
-    WebkitBoxOrient: "vertical",
-    ...(persistent && {
-      height: lineHeight * line,
-    }),
-    ...sx,
-  };
+    const styles = {
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+      display: "-webkit-box",
+      WebkitLineClamp: line,
+      WebkitBoxOrient: "vertical",
+      ...(persistent && {
+        height: lineHeight * line,
+      }),
+      ...sx,
+    };
 
-  if (asLink) {
+    if (asLink) {
+      return (
+        <Link
+          color="inherit"
+          ref={ref}
+          variant={variant}
+          sx={{ ...styles }}
+          {...other}
+        >
+          {children}
+        </Link>
+      );
+    }
+
     return (
-      <Link
-        color="inherit"
-        ref={ref}
-        variant={variant}
-        sx={{ ...styles }}
-        {...other}
-      >
+      <Typography ref={ref} variant={variant} sx={{ ...styles }} {...other}>
         {children}
-      </Link>
+      </Typography>
     );
   }
-
-  return (
-    <Typography ref={ref} variant={variant} sx={{ ...styles }} {...other}>
-      {children}
-    </Typography>
-  );
-};
+);
 
 TextMaxLine.propTypes = {
   asLink: PropTypes.bool,

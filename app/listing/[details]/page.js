@@ -75,14 +75,14 @@ const PropertyDetail = ({ params }) => {
 
     const handleWhatsAppClick = () => {
       const phoneNumber = "254701374731"; // Replace with your WhatsApp number
-      const message = `Hello, I would like to book room ${currentProduct.title}.`; // Your pre-filled message
+      const message = `Hello, I would like to book  ${currentProduct.title}.`; // Your pre-filled message
       const encodedMessage = encodeURIComponent(message);
       window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     };
 
     const handleWhatsAppClick2 = () => {
       const phoneNumber = "254717808035"; // Replace with your WhatsApp number
-      const message = `Hello, I would like to book room ${currentProduct.title}.`; // Your pre-filled message
+      const message = `Hello, I would like to book  ${currentProduct.title}.`; // Your pre-filled message
       const encodedMessage = encodeURIComponent(message);
       window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     };
@@ -108,7 +108,7 @@ const PropertyDetail = ({ params }) => {
     const handleSMSClick = () => {
       const phoneNumber = "+254701374731"; // Replace with your phone number
       const message = encodeURIComponent(
-        `Hello, I would like to book room  ${currentProduct.title}.`
+        `Hello, I would like to book   ${currentProduct.title}.`
       );
       window.location.href = `sms:${phoneNumber}?body=${message}`;
     };
@@ -116,7 +116,7 @@ const PropertyDetail = ({ params }) => {
     const handleSMSClick2 = () => {
       const phoneNumber = "+254717808035"; // Replace with your phone number
       const message = encodeURIComponent(
-        `Hello, I would like to book room  ${currentProduct.title}.`
+        `Hello, I would like to book   ${currentProduct.title}.`
       );
       window.location.href = `sms:${phoneNumber}?body=${message}`;
     };
