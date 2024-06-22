@@ -43,7 +43,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main className="w-screen overflow-x-hidden">
       <Toaster />
 
       <Banner />
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
       )}
-      <Looking />
+      {/* <Looking /> */}
       {/* <Mentor /> */}
       <Testimonials />
       <FooterBanner />

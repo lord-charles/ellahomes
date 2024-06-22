@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <Disclosure as="nav">
-      <>
+      <div className="w-screen overflow-hidden">
         <div
           className="
 py-3 text-[13px] bg-cyan-600"
@@ -175,23 +175,21 @@ py-3 text-[13px] bg-cyan-600"
           // style={{ backgroundColor: "#e1f2fc" }}
         >
           <div className="flex justify-between items-center lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px]">
-            <IconButton>
-              <Link
-                className="text-white font-bold text-[30px]  ml-[-150px] h-[148px]"
-                href="/"
-              >
-                <Image
-                  width={300}
-                  height={200}
-                  src="/ella-homes-logo.png"
-                  alt="logo"
-                  className="md:w-[500px] h-[130px] "
-                />
-                <h2 className="text-white text-[18px] relative top-[5px] left-2 custom-font-p animate-pulse rounded-md italic">
-                  Stay. Relax. Repeat.
-                </h2>
-              </Link>
-            </IconButton>
+            <Link
+              className="text-white font-bold text-[30px]  ml-[-130px] h-[148px] items-center flex flex-col"
+              href="/"
+            >
+              <Image
+                width={300}
+                height={200}
+                src="/ella-homes-logo.png"
+                alt="logo"
+                className="object-contain w-[400px]"
+              />
+              <h2 className="text-white text-[18px] relative top-[5px] custom-font-p animate-pulse rounded-md italic ">
+                Stay. Relax. Repeat.
+              </h2>
+            </Link>
 
             {/* links */}
             <div className="flex flex-col items-center space-y-2 relative top-2 xxxs:flex md:hidden">
@@ -248,7 +246,7 @@ py-3 text-[13px] bg-cyan-600"
           // style={{ backgroundColor: "#e1f2fc" }}
         >
           <div className="lg:mx-[34px]  xl:mx-[200px] md:mx-[10px] xxxs:mx-[5px] xxl:mx-[350px]  flex justify-between py-4">
-            <div className="flex items-center gap-x-8">
+            <div className="flex items-center gap-x-6">
               <Menu as="div" className="relative inline-block ">
                 <div>
                   <Menu.Button className="flex gap-3 items-center">
@@ -258,7 +256,7 @@ py-3 text-[13px] bg-cyan-600"
                       height={40}
                       alt="menu"
                     />
-                    <h2 className="font-serif text-[20px] text-white font-bold ">
+                    <h2 className="font-serif text-[18px] text-white font-bold ">
                       CATEGORY
                     </h2>
                     <ChevronDownIcon
@@ -299,20 +297,18 @@ py-3 text-[13px] bg-cyan-600"
                 </Transition>
               </Menu>
 
-              <div className="flex space-x-3 font-serif text-white ">
-                <div className="text-white text-[18px] rounded-md font-bold">
+              <div className="flex xxxs:space-x-1 md:space-x-3 font-serif text-white ">
+                <div className="text-white text-[15px] rounded-md font-bold">
                   <Link href="/">HOME</Link>
                 </div>
-                <div className="text-white text-[18px] rounded-md font-bold">
+                <div className="text-white text-[15px] rounded-md font-bold">
                   <Link href="/blog">BLOGS</Link>
                 </div>
-                <div className="text-white text-[18px] rounded-md font-bold">
+                <div className="text-white text-[15px] rounded-md font-bold">
                   <Link href="/contact">CONTACT</Link>
                 </div>
               </div>
             </div>
-
-            <div className="xxxs:hidden md:flex"></div>
           </div>
         </div>
 
@@ -322,7 +318,7 @@ py-3 text-[13px] bg-cyan-600"
             <Drawerdata />
           </Drawer>
         </div>
-      </>
+      </div>
     </Disclosure>
   );
 };
