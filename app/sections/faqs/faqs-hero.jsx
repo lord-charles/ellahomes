@@ -18,7 +18,8 @@ export default function FaqsHero() {
       sx={{
         ...bgGradient({
           color: alpha(theme.palette.grey[900], 0.8),
-          imgUrl: "/assets/images/faqs/hero.jpg",
+          imgUrl:
+            "https://res.cloudinary.com/dn3q6mcwp/image/upload/v1709099464/betty%20Airbnb/villa/asjwktdcmjpzu98halja.jpg",
         }),
         height: { md: 560 },
         py: { xs: 10, md: 0 },

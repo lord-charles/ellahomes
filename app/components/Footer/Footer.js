@@ -28,7 +28,7 @@ const Footer = () => {
                     <br />
                     Email : info@ellahomeske.com
                     <br />
-                    Phone : +254717808035
+                    Phone : +254717808035 | 254 701374731 | 254721636368
                   </p>
                 </div>
                 <div className="md:w-1/2">
