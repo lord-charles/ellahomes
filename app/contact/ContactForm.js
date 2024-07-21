@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { useTranslate } from "../locales";
 import { MotionViewport, varFade } from "../components/animate";
+import { base_url } from "@/utils/baseUrl";
 
 // ----------------------------------------------------------------------
 
@@ -20,19 +21,12 @@ export default function ContactForm() {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post(
-        "https://quicksms.advantasms.com/api/services/sendsms/",
-        {
-          apikey: "1189b6daa79a2d07cdb1abbf3af5da03",
-          partnerID: "7896",
-          message: `Name: ${name},
-           Email: ${email},
-           Subject: ${subject},
-           Message: ${message}`,
-          shortcode: "ELLAHOMES",
-          mobile: "254721636368",
-        }
-      );
+      const res = await axios.post(`${base_url}payment/sendSms`, {
+        name,
+        email,
+        subject,
+        message,
+      });
       alert(t("Your message has been sent successfully!"));
       console.log(res.data);
     } catch (error) {
